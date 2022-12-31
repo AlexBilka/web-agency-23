@@ -1,0 +1,48 @@
+:root {
+  --col-bg-primary: #ffffff;
+  --col-bg-light: #fcfcfc;
+  --col-bg-middle: #97af8d;
+  --col-bg-dark: #84a178;
+
+  --col-bg-cream: #aec6a5;
+  --col-bg-cofee: #efd478;
+  --col-bg-milkshakes: #d6936d;
+
+  --col-text-primary: #131313;
+  --col-text-secondary: #fcfcfc;
+
+  --col-title-primary: #131313;
+  --col-title-secondary: #fcfcfc;
+
+  --col-default: #f8d24e;
+  --col-accent: #0a8817;
+
+  --col-btn-default: #000000;
+  --col-btn-hover: #000000;
+  --col-btn-focus: #fcfcfc;
+  --col-btn-disabled: #000000;
+
+  --col-menu-default: #f8d24e;
+  --col-menu-hover: #0a8817;
+  --col-menu-focus: #fcfcfc;
+  --col-menu-disabled: #ababab;
+
+  --col-btn-bg-default: #f8d24e;
+  --col-btn-bg-hover: #0a8817;
+  --col-btn-bg-focus: #0a8817;
+  --col-btn-bg-disabled: #ababab;
+
+  --col-icon-light: #fcfcfc;
+  --col-icon-dark: #84a178;
+  --col-icon-bg: #f8d24e;
+  --col-icon-bg-dark: #84a178;
+
+  --col-backdrop: rgba(0, 0, 0, 0.2);
+  --col-border-form: #f8d24e;
+
+  --border-btn-transparent: 2px solid #0a8817;
+  --border-input: 1px solid #84a178;
+
+  --cubic-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --animation-time: 250ms;    
+}

@@ -1,0 +1,48 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 1.76;
+  letter-spacing: 0.04em;
+  color: var(--col-text-primary);
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.section {
+  padding-bottom: 60px;
+  background-color: var(--col-bg-dark);
+}
+
+.container {
+  max-width: 100%;
+  padding-left: 23px;
+  padding-right: 23px;
+  margin: 0 auto;
+  max-width: 375px;
+
+  @include mobile {
+    max-width: 480px;
+  }
+
+  @include tablet {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @include desktop {
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+

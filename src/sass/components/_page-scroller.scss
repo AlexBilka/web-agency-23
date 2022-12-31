@@ -1,0 +1,37 @@
+@keyframes slide-top {
+    from {
+      transform: scale(0.9);
+    }
+    to {
+      transform: scale(1.1);
+    }
+}
+
+@keyframes scaler {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 5vh;
+    right: 30px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: var(--col-btn-bg-default);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    animation: slide-top 750ms linear, scaler 1500ms infinite alternate both;
+    z-index: 10;
+  }
+  .arrow-top {
+    fill: #fff;
+  }
