@@ -1,8 +1,7 @@
 .example {
+  display: block;
+  padding: 60px 15px;
   &--dark {
     background-color: var(--col-bg-dark);
-  }
-  &--light {
-    background-color: var(--col-bg-light);
   }
 }

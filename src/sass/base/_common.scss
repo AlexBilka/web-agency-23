@@ -1,7 +1,7 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Epilogue', sans-serif;
   font-size: 14px;
   line-height: 1.76;
   letter-spacing: 0.04em;
@@ -19,7 +19,7 @@ html {
 
 .section {
   padding-bottom: 60px;
-  background-color: var(--col-bg-dark);
+  background-color: var(--col-bg-primary);
 }
 
 .container {
@@ -45,4 +45,3 @@ html {
     padding-right: 15px;
   }
 }
-

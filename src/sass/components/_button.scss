@@ -1,11 +1,12 @@
 .btn {
+  display: flex;
+  align-items: center;
+
   border-style: none;
   font-family: inherit;
 
   padding: 12px 34px;
   border-radius: 10px;
-
-  cursor: url(../images/products/cursor.png), pointer;
 
   color: var(--col-btn-default);
   background-color: var(--col-btn-bg-default);
