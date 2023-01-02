@@ -5,30 +5,30 @@
   border-style: none;
   font-family: inherit;
 
-  padding: 12px 34px;
-  border-radius: 10px;
+  padding: 17px 32px;
+  border-radius: 6px;
 
   color: var(--col-btn-default);
-  background-color: var(--col-btn-bg-default);
-  font-weight: 600;
+  background-color: var(--col-btn-bg-default-primary);
+  font-weight: 900;
   font-size: 14px;
-  line-height: calc(18 / 14);
+  line-height: calc(14 / 14);
 
   transition: color var(--animation-time) var(--cubic-function),
     background-color var(--animation-time) var(--cubic-function);
 
   &:hover {
-    color: var(--col-btn-hover);
+    color: var(--col-btn-hover-light);
     background-color: var(--col-btn-bg-hover);
   }
 
   &:focus {
     color: var(--col-btn-focus);
     background-color: var(--col-btn-bg-focus);
-    fill: var(--col-btn-focus);
   }
 
   &:disabled {
+    color: var(--col-btn-disabled);
     background-color: var(--col-btn-bg-disabled);
     cursor: inherit;
   }

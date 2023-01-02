@@ -1,48 +1,43 @@
 :root {
-  --col-bg-primary: #FDF0E9;
+  --col-bg-primary: #fdf0e9;
   --col-bg-light: #ffffff;
-  --col-bg-middle: #97af8d;
-  --col-bg-dark: #84a178;
+  --col-bg-middle: #ef6d58;
+  --col-bg-dark: #28293e;
 
-  --col-bg-cream: #aec6a5;
-  --col-bg-cofee: #efd478;
-  --col-bg-milkshakes: #d6936d;
+  --col-text-primary: #391400;
+  --col-text-secondary: #ffffff;
+  --color-text-inactive-dark: rgba(57, 20, 0, 0.64);
+  --color-text-inactive-light: rgba(255, 255, 255, 0.64);
 
-  --col-text-primary: #131313;
-  --col-text-secondary: #fcfcfc;
+  --col-title-primary: #391400;
+  --col-title-secondary: #ffffff;
 
-  --col-title-primary: #131313;
-  --col-title-secondary: #fcfcfc;
+  --col-accent-primary: #ef6d58;
+  --col-accent-secondary: #b550f8;
 
-  --col-default: #f8d24e;
-  --col-accent: #0a8817;
-
-  --col-btn-default: #000000;
-  --col-btn-hover: #000000;
-  --col-btn-focus: #fcfcfc;
+  --col-btn-default: #ffffff;
+  --col-btn-hover-dark: #391400;
+  --col-btn-hover-light: #ffffff;
+  --col-btn-focus: #ef6d58;
   --col-btn-disabled: #000000;
 
-  --col-menu-default: #f8d24e;
-  --col-menu-hover: #0a8817;
-  --col-menu-focus: #fcfcfc;
-  --col-menu-disabled: #ababab;
-
-  --col-btn-bg-default: #f8d24e;
-  --col-btn-bg-hover: #0a8817;
-  --col-btn-bg-focus: #0a8817;
+  --col-btn-bg-default-primary: #ef6d58;
+  --col-btn-bg-default-secondary: #b550f8;
+  --col-btn-bg-hover: rgba(255, 255, 255, 0.3);
+  --col-btn-bg-focus: transparent;
   --col-btn-bg-disabled: #ababab;
 
-  --col-icon-light: #fcfcfc;
-  --col-icon-dark: #84a178;
-  --col-icon-bg: #f8d24e;
-  --col-icon-bg-dark: #84a178;
+  --border-btn-focus-light: 2px solid rgba(255, 255, 255, 0.3);
+
+  --fill-icon: #fdf0e9;
+  --col-bg-icon: #ef6d58;
+  --col-bg-icon-hover: rgba(255, 255, 255, 0.3);
+  --col-bg-icon-hover: transparent;
 
   --col-backdrop: rgba(0, 0, 0, 0.2);
-  --col-border-form: #f8d24e;
 
-  --border-btn-transparent: 2px solid #0a8817;
-  --border-input: 1px solid #84a178;
+  --border: 1px solid #f3d1bf;
 
   --cubic-function: cubic-bezier(0.4, 0, 0.2, 1);
-  --animation-time: 250ms;    
+  --animation-time: 250ms;
 }
