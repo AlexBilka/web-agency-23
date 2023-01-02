@@ -1,25 +1,548 @@
-<section class="about section example" id="about">
-  <div class="about__container container">
-    <h2 class="about__title section-title">Gallery</h2>
-    <div class="gallery-card">
-      <h3 class="gallery-card__title">Lorem ipsum</h3>
-      <p class="gallery-card__description">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
-        officiis.
-      </p>
-      <button
-        class="gallery-card__button btn"
-        type="button"
-        data-modal-follow-open
-      >
-        action
-        <svg class="gallery-card__icon" width="12" height="12">
-          <use href="./images/icons.svg#icon-arrow-btn"></use>
-        </svg>
-      </button>
-      <a class="gallery-card__link link" href="/src/page-single-project.html"
-        >single-project</a
-      >
+<section class="gallery-portfolio section">
+  <div class="portfolio__container container">
+    <p class="portfolio__uppertitle portfolio__title--hidden">Portfolio</p>
+    <h2 class="portfolio__title portfolio__title--hidden">Latest Work</h2>
+    <div class="portfolio__gallery">
+      <div class="portfolio__filters">
+        <button
+          type="button"
+          class="filter-btn btn--all filter-btn--gallery active"
+          data-name="all"
+        >
+          Show All <span class="all-count all-count--gallery"></span>
+        </button>
+        <button
+          type="button"
+          class="filter-btn btn--design filter-btn--gallery"
+          data-name="design"
+        >
+          Design<span class="design-count design-count--gallery"></span>
+        </button>
+        <button
+          type="button"
+          class="filter-btn btn--branding filter-btn--gallery"
+          data-name="branding"
+        >
+          Branding<span class="branding-count branding-count--gallery"></span>
+        </button>
+        <button
+          type="button"
+          class="filter-btn btn--illustration filter-btn--gallery"
+          data-name="illustration"
+        >
+          illustration<span class="illustration-count illustration-count--gallery"></span>
+        </button>
+        <button
+          type="button"
+          class="filter-btn btn--motion filter-btn--gallery"
+          data-name="motion"
+        >
+          Motion<span class="motion-count motion-count--gallery"></span>
+        </button>
+      </div>
+      <div class="portfolio__wrapper">
+        <div class="img__wrapper img--design img__wrapper--gallery" data-name="design">
+          <div class="img-title__wrapper">
+            <p class="img__section-title">Design</p>
+          </div>
+          <p class="img__name">CIRCLES</p>
+          <picture class="img-design">
+            <source
+              srcset="
+                ./images/portfolio/desk/design1-desk@1x.jpg 1x,
+                ./images/portfolio/desk/design1-desk@2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/portfolio/mob/design1-mob@1x.jpg 1x,
+                ./images/portfolio/mob/design1-mob@2x.jpg 2x
+              "
+              media="(min-width: 320px)"
+            />
+            <img
+              class="img"
+              src="./images/portfolio/desk/design1-desk@1x.jpg"
+              height="420"
+              alt=""
+            />
+          </picture>
+        </div>
+        <div class="img__wrapper img--branding img__wrapper--gallery" data-name="branding">
+          <div class="img-title__wrapper">
+            <p class="img__section-title">Branding</p>
+          </div>
+          <p class="img__name">3D OBJECTS</p>
+          <picture class="img-design">
+            <source
+              srcset="
+                ./images/portfolio/desk/branding1-desk@1x.jpg 1x,
+                ./images/portfolio/desk/branding1-desk@2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/portfolio/mob/branding1-mob@1x.jpg 1x,
+                ./images/portfolio/mob/branding1-mob@2x.jpg 2x
+              "
+              media="(min-width: 320px)"
+            />
+            <img
+              class="img"
+              src="./images/portfolio/desk/branding1-desk@1x.jpg"
+              height="420"
+              alt=""
+            />
+          </picture>
+        </div>
+        <div class="img__wrapper img--illustration img__wrapper--gallery" data-name="illustration">
+          <div class="img-title__wrapper">
+            <p class="img__section-title">Illustration</p>
+          </div>
+          <p class="img__name">FLOWERS</p>
+          <picture class="img-design">
+            <source
+              srcset="
+                ./images/portfolio/desk/illustration1-desk@1x.jpg 1x,
+                ./images/portfolio/desk/illustration1-desk@2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/portfolio/mob/illustration1-mob@1x.jpg 1x,
+                ./images/portfolio/mob/illustration1-mob@2x.jpg 2x
+              "
+              media="(min-width: 320px)"
+            />
+            <img
+              class="img"
+              src="./images/portfolio/desk/illustration1-desk@1x.jpg"
+              height="420"
+              alt=""
+            />
+          </picture>
+        </div>
+        <div class="img__wrapper img--motion img__wrapper--gallery" data-name="motion">
+          <div class="img-title__wrapper">
+            <p class="img__section-title">Motion</p>
+          </div>
+          <p class="img__name">BOUNCE</p>
+          <picture class="img-design">
+            <source
+              srcset="
+                ./images/portfolio/desk/motion1-desk@1x.jpg 1x,
+                ./images/portfolio/desk/motion1-desk@2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/portfolio/mob/motion1-mob@1x.jpg 1x,
+                ./images/portfolio/mob/motion1-mob@2x.jpg 2x
+              "
+              media="(min-width: 320px)"
+            />
+            <img
+              class="img"
+              src="./images/portfolio/desk/motion1-desk@1x.jpg"
+              height="420"
+              alt=""
+            />
+          </picture>
+        </div>
+        <div class="img__wrapper img--design img__wrapper--gallery" data-name="design">
+          <div class="img-title__wrapper">
+            <p class="img__section-title">Design</p>
+          </div>
+          <p class="img__name">WATER</p>
+          <picture class="img-design">
+            <source
+              srcset="
+                ./images/portfolio/desk/design2-desk@1x.jpg 1x,
+                ./images/portfolio/desk/design2-desk@2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/portfolio/mob/design2-mob@1x.jpg 1x,
+                ./images/portfolio/mob/design2-mob@2x.jpg 2x
+              "
+              media="(min-width: 320px)"
+            />
+            <img
+              class="img"
+              src="./images/portfolio/desk/design2-desk@1x.jpg"
+              height="420"
+              alt=""
+            />
+          </picture>
+        </div>
+        <div class="img__wrapper img--illustration img__wrapper--gallery" data-name="illustration">
+          <div class="img-title__wrapper">
+            <p class="img__section-title">Illustration</p>
+          </div>
+          <p class="img__name">OCEAN</p>
+          <picture class="img-design">
+            <source
+              srcset="
+                ./images/portfolio/desk/illustration2-desk@1x.jpg 1x,
+                ./images/portfolio/desk/illustration2-desk@2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/portfolio/mob/illustration2-mob@1x.jpg 1x,
+                ./images/portfolio/mob/illustration2-mob@2x.jpg 2x
+              "
+              media="(min-width: 320px)"
+            />
+            <img
+              class="img"
+              src="./images/portfolio/desk/illustration2-desk@1x.jpg"
+              height="420"
+              alt=""
+            />
+          </picture>
+        </div>
+        <div class="img__wrapper img--motion img__wrapper--gallery" data-name="motion">
+          <div class="img-title__wrapper">
+            <p class="img__section-title">Motion</p>
+          </div>
+          <p class="img__name">SOFA</p>
+          <picture class="img-design">
+            <source
+              srcset="
+                ./images/portfolio/desk/motion2-desk@1x.jpg 1x,
+                ./images/portfolio/desk/motion2-desk@2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/portfolio/mob/motion2-mob@1x.jpg 1x,
+                ./images/portfolio/mob/motion2-mob@2x.jpg 2x
+              "
+              media="(min-width: 320px)"
+            />
+            <img
+              class="img"
+              src="./images/portfolio/desk/motion2-desk@1x.jpg"
+              width="420"
+              alt=""
+            />
+          </picture>
+        </div>
+        <div class="img__wrapper img--design img__wrapper--gallery" data-name="design">
+          <div class="img-title__wrapper">
+            <p class="img__section-title">Design</p>
+          </div>
+          <p class="img__name">Crystals</p>
+          <picture class="img-design">
+            <source
+              srcset="
+                ./images/portfolio/desk/design3-desk@1x.jpg 1x,
+                ./images/portfolio/desk/design3-desk@2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/portfolio/mob/design3-mob@1x.jpg 1x,
+                ./images/portfolio/mob/design3-mob@2x.jpg 2x
+              "
+              media="(min-width: 320px)"
+            />
+            <img
+              class="img"
+              src="./images/portfolio/desk/design3-desk@1x.jpg"
+              height="420"
+              alt=""
+            />
+          </picture>
+        </div>
+        <div class="img__wrapper img--branding img__wrapper--gallery" data-name="branding">
+          <div class="img-title__wrapper">
+            <p class="img__section-title">Branding</p>
+          </div>
+          <p class="img__name">SOFA</p>
+          <picture class="img-design">
+            <source
+              srcset="
+                ./images/portfolio/desk/branding2-desk@1x.jpg 1x,
+                ./images/portfolio/desk/branding2-desk@2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/portfolio/mob/branding2-mob@1x.jpg 1x,
+                ./images/portfolio/mob/branding2-mob@2x.jpg 2x
+              "
+              media="(min-width: 320px)"
+            />
+            <img
+              class="img"
+              src="./images/portfolio/desk/branding2-desk@1x.jpg"
+              height="420"
+              alt=""
+            />
+          </picture>
+        </div>
+        <div class="img__wrapper img--branding img__wrapper--gallery" data-name="branding">
+          <div class="img-title__wrapper">
+            <p class="img__section-title">Branding</p>
+          </div>
+          <p class="img__name">SOFA</p>
+          <picture class="img-design">
+            <source
+              srcset="
+                ./images/portfolio/desk/branding3-desk@1x.jpg 1x,
+                ./images/portfolio/desk/branding3-desk@2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/portfolio/mob/branding3-mob@1x.jpg 1x,
+                ./images/portfolio/mob/branding3-mob@2x.jpg 2x
+              "
+              media="(min-width: 320px)"
+            />
+            <img
+              class="img"
+              src="./images/portfolio/desk/branding3-desk@1x.jpg"
+              height="420"
+              alt=""
+            />
+          </picture>
+        </div>
+        <div class="img__wrapper img--branding img__wrapper--gallery" data-name="branding">
+          <div class="img-title__wrapper">
+            <p class="img__section-title">Branding</p>
+          </div>
+          <p class="img__name">SOFA</p>
+          <picture class="img-design">
+            <source
+              srcset="
+                ./images/portfolio/desk/motion3-desk@1x.jpg 1x,
+                ./images/portfolio/desk/motion3-desk@2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/portfolio/mob/motion3-mob@1x.jpg 1x,
+                ./images/portfolio/mob/motion3-mob@2x.jpg 2x
+              "
+              media="(min-width: 320px)"
+            />
+            <img
+              class="img"
+              src="./images/portfolio/desk/motion3-desk@1x.jpg"
+              height="420"
+              alt=""
+            />
+          </picture>
+        </div>
+        <div class="img__wrapper img--design img__wrapper--gallery" data-name="design">
+          <div class="img-title__wrapper">
+            <p class="img__section-title">Design</p>
+          </div>
+          <p class="img__name">FLOWER</p>
+          <picture class="img-design">
+            <source
+              srcset="
+                ./images/portfolio/desk/design4-desk@1x.jpg 1x,
+                ./images/portfolio/desk/design4-desk@2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/portfolio/mob/design4-mob@1x.jpg 1x,
+                ./images/portfolio/mob/design4-mob@2x.jpg 2x
+              "
+              media="(min-width: 320px)"
+            />
+            <img
+              class="img"
+              src="./images/portfolio/desk/design4-desk@1x.jpg"
+              height="420"
+              alt=""
+            />
+          </picture>
+        </div>
+        <div class="img__wrapper img--branding img__wrapper--gallery" data-name="branding">
+          <div class="img-title__wrapper">
+            <p class="img__section-title">Branding</p>
+          </div>
+          <p class="img__name">SOFA</p>
+          <picture class="img-design">
+            <source
+              srcset="
+                ./images/portfolio/desk/branding4-desk@1x.jpg 1x,
+                ./images/portfolio/desk/branding4-desk@2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/portfolio/mob/branding4-mob@1x.jpg 1x,
+                ./images/portfolio/mob/branding4-mob@2x.jpg 2x
+              "
+              media="(min-width: 320px)"
+            />
+            <img
+              class="img"
+              src="./images/portfolio/desk/branding4-desk@1x.jpg"
+              height="420"
+              alt=""
+            />
+          </picture>
+        </div>
+        <div class="img__wrapper img--illustration img__wrapper--gallery" data-name="illustration">
+          <div class="img-title__wrapper">
+            <p class="img__section-title">Illustration</p>
+          </div>
+          <p class="img__name">FLOWER</p>
+          <picture class="img-design">
+            <source
+              srcset="
+                ./images/portfolio/desk/illustration3-desk@1x.jpg 1x,
+                ./images/portfolio/desk/illustration3-desk@2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/portfolio/mob/illustration3-mob@1x.jpg 1x,
+                ./images/portfolio/mob/illustration3-mob@2x.jpg 2x
+              "
+              media="(min-width: 320px)"
+            />
+            <img
+              class="img"
+              src="./images/portfolio/desk/illustration3-desk@1x.jpg"
+              height="420"
+              alt=""
+            />
+          </picture>
+        </div>
+        <div class="img__wrapper img--illustration img__wrapper--gallery" data-name="illustration">
+          <div class="img-title__wrapper">
+            <p class="img__section-title">Illustration</p>
+          </div>
+          <p class="img__name">WATER PLANT</p>
+          <picture class="img-design">
+            <source
+              srcset="
+                ./images/portfolio/desk/illustration4-desk@1x.jpg 1x,
+                ./images/portfolio/desk/illustration4-desk@2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/portfolio/mob/illustration4-mob@1x.jpg 1x,
+                ./images/portfolio/mob/illustration4-mob@2x.jpg 2x
+              "
+              media="(min-width: 320px)"
+            />
+            <img
+              class="img"
+              src="./images/portfolio/desk/illustration4-desk@1x.jpg"
+              height="420"
+              alt=""
+            />
+          </picture>
+        </div>
+        <div class="img__wrapper img--branding img__wrapper--gallery" data-name="branding">
+          <div class="img-title__wrapper">
+            <p class="img__section-title">Branding</p>
+          </div>
+          <p class="img__name">SOFA</p>
+          <picture class="img-design">
+            <source
+              srcset="
+                ./images/portfolio/desk/motion4-desk@1x.jpg 1x,
+                ./images/portfolio/desk/motion4-desk@2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/portfolio/mob/motion4-mob@1x.jpg 1x,
+                ./images/portfolio/mob/motion4-mob@2x.jpg 2x
+              "
+              media="(min-width: 320px)"
+            />
+            <img
+              class="img"
+              src="./images/portfolio/desk/motion4-desk@1x.jpg"
+              height="420"
+              alt=""
+            />
+          </picture>
+        </div>
+        <div class="img__wrapper img--motion img__wrapper--gallery" data-name="motion">
+          <div class="img-title__wrapper">
+            <p class="img__section-title">Motion</p>
+          </div>
+          <p class="img__name">BALLS</p>
+          <picture class="img-design">
+            <source
+              srcset="
+                ./images/portfolio/desk/motion5-desk@1x.jpg 1x,
+                ./images/portfolio/desk/motion5-desk@2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/portfolio/mob/motion5-mob@1x.jpg 1x,
+                ./images/portfolio/mob/motion5-mob@2x.jpg 2x
+              "
+              media="(min-width: 320px)"
+            />
+            <img
+              class="img"
+              src="./images/portfolio/desk/motion5-desk@1x.jpg"
+              width="420"
+              alt=""
+            />
+          </picture>
+        </div>
+        <div class="img__wrapper img--motion img__wrapper--gallery" data-name="motion">
+          <div class="img-title__wrapper">
+            <p class="img__section-title">Motion</p>
+          </div>
+          <p class="img__name">Bubbles</p>
+          <picture class="img-design">
+            <source
+              srcset="
+                ./images/portfolio/desk/motion6-desk@1x.jpg 1x,
+                ./images/portfolio/desk/motion6-desk@2x.jpg 2x
+              "
+              media="(min-width: 768px)" />
+            <source
+              srcset="
+                ./images/portfolio/mob/motion6-mob@1x.jpg 1x,
+                ./images/portfolio/mob/motion6-mob@2x.jpg 2x
+              "
+              media="(min-width: 320px)" />
+            <img
+              class="img"
+              src="./images/portfolio/desk/motion6-desk@1x.jpg"
+              width="420"
+              alt=""
+          /></picture>
+        </div>
+      </div>
     </div>
   </div>
 </section>
