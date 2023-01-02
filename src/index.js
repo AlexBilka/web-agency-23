@@ -1,1 +1,2 @@
-/*import './page-scroller';*/
+import './page-scroller';
+import './portfolio';
