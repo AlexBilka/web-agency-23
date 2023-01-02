@@ -1,2 +1,64 @@
-@import './common';
-@import './example';
+@import './utils/variables';
+@import './utils/mixins';
+@import './base/reset';
+@import './base/common';
+
+@import './components/example';
+@import './components/page-scroller';
+@import './components/social';
+@import './components/button';
+@import './components/section-title';
+@import './components/mobile-menu';
+
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/clients';
+@import './layouts/about';
+@import './layouts/experience';
+@import './layouts/awesome';
+@import './layouts/video-reel';
+@import './layouts/new-look';
+@import './layouts/features';
+@import './layouts/services';
+@import './layouts/digital-products';
+@import './layouts/latest-work';
+@import './layouts/get-started';
+@import './layouts/events';
+@import './layouts/team';
+@import './layouts/founder-words';
+@import './layouts/testimonials';
+@import './layouts/pricing';
+@import './layouts/faq';
+@import './layouts/awards';
+@import './layouts/blog';
+@import './layouts/newsletter';
+@import './layouts/map';
+@import './layouts/contacts';
+@import './layouts/contact-us';
+@import './layouts/footer';
+
+@import './layouts/hero-about';
+@import './layouts/gallery';
+
+@import './layouts/hero-services';
+@import './layouts/how-its-work';
+
+@import './layouts/hero-portfolio';
+@import './layouts/gallery-portfolio';
+
+@import './layouts/hero-single-project';
+@import './layouts/problem';
+@import './layouts/gallery-single-project';
+@import './layouts/solution';
+@import './layouts/latest-work';
+
+@import './layouts/hero-blog';
+@import './layouts/latest-posts';
+@import './layouts/all-posts';
+
+@import './layouts/hero-single-post';
+@import './layouts/content';
+@import './layouts/editor';
+@import './layouts/related-articles';
+
+@import './layouts/hero-contact';
