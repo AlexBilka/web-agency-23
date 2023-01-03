@@ -51,7 +51,7 @@ window.addEventListener("load", () => {
   });
   
   /* ===> script for filter buttons, show images for each section of gallery <=== */
-  const filterBtn = document.querySelector(".portfolio__filters");
+  const filterBtn = document.querySelector(".latest-work__filters");
   const filterCat = document.querySelectorAll(".img__wrapper");
   
   window.onload = () => {

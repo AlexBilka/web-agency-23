@@ -1,23 +1,105 @@
-<section class="about section example" id="about">
-  <div class="about__container container">
-    <h2 class="about__title section-title">Example</h2>
-    <div class="gallery-card">
-      <h3 class="gallery-card__title">Lorem ipsum</h3>
-      <p class="gallery-card__description">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
-        officiis.
-      </p>
-      <button
-        class="gallery-card__button btn"
-        type="button"
-        data-modal-follow-open
-      >
-        action
-        <svg class="gallery-card__icon" width="12" height="12">
-          <use href="./images/icons.svg#icon-arrow-btn"></use>
-        </svg>
-      </button>
-      <a class="gallery-card__link link" href="#">Twitter</a>
+<section class="gallery-single-project section" id="gallery-single-project">
+  <div class="gallery-single-project__container container">
+    <div class="video__wrapper">
+      <iframe class="video-frame" src="https://www.youtube.com/embed/kR5K1cPYl4I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
+<div class="images__wrapper">
+      <div class="img__single-project" data-name="design">
+        <picture class="img-design">
+          <source
+            srcset="
+              ./images/latest-work/desk/design2-desk@1x.jpg 1x,
+              ./images/latest-work/desk/design2-desk@2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./images/latest-work/mob/design2-mob@1x.jpg 1x,
+              ./images/latest-work/mob/design2-mob@2x.jpg 2x
+            "
+            media="(min-width: 320px)"
+          />
+          <img
+            class="image"
+            src="./images/latest-work/desk/design2-desk@1x.jpg"
+            width="210"
+            alt=""
+          />
+        </picture>
+      </div>
+      <div class="img__single-project" data-name="illustration">
+        <picture class="img-design">
+          <source
+            srcset="
+              ./images/latest-work/desk/illustration2-desk@1x.jpg 1x,
+              ./images/latest-work/desk/illustration2-desk@2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./images/latest-work/mob/illustration2-mob@1x.jpg 1x,
+              ./images/latest-work/mob/illustration2-mob@2x.jpg 2x
+            "
+            media="(min-width: 320px)"
+          />
+          <img
+          class="image"
+            src="./images/latest-work/desk/illustration2-desk@1x.jpg"
+            width="210"
+            alt=""
+          />
+        </picture>
+      </div>
+      <div class="img__single-project" data-name="motion">
+        <picture class="img-design">
+          <source
+            srcset="
+              ./images/latest-work/desk/motion2-desk@1x.jpg 1x,
+              ./images/latest-work/desk/motion2-desk@2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./images/latest-work/mob/motion2-mob@1x.jpg 1x,
+              ./images/latest-work/mob/motion2-mob@2x.jpg 2x
+            "
+            media="(min-width: 320px)"
+          />
+          <img
+          class="image"
+            src="./images/latest-work/desk/motion2-desk@1x.jpg"
+            width="210"
+            alt=""
+          />
+        </picture>
+      </div>
+      <div class="img__single-project" data-name="design">
+        <picture class="img-design">
+          <source
+            srcset="
+              ./images/latest-work/desk/design3-desk@1x.jpg 1x,
+              ./images/latest-work/desk/design3-desk@2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./images/latest-work/mob/design3-mob@1x.jpg 1x,
+              ./images/latest-work/mob/design3-mob@2x.jpg 2x
+            "
+            media="(min-width: 320px)"
+          />
+          <img
+          class="image"
+            src="./images/latest-work/desk/design3-desk@1x.jpg"
+            width="210"
+            alt=""
+          />
+        </picture>
+      </div>
+</div>
   </div>
 </section>
