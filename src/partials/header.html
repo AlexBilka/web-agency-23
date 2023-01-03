@@ -1,23 +1,59 @@
-<section class="about section example" id="about">
-  <div class="about__container container">
-    <h2 class="about__title section-title">Example</h2>
-    <div class="gallery-card">
-      <h3 class="gallery-card__title">Lorem ipsum</h3>
-      <p class="gallery-card__description">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
-        officiis.
-      </p>
-      <button
-        class="gallery-card__button btn"
-        type="button"
-        data-modal-follow-open
-      >
-        action
-        <svg class="gallery-card__icon" width="12" height="12">
-          <use href="./images/icons.svg#icon-arrow-btn"></use>
+<header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <a href="#"
+        ><img
+          srcset="./images/header/logo.png 1x, ./images/header/logo2x.png 2x"
+          src="./images/header/logo.png"
+          alt="logo"
+          width="152"
+      /></a>
+      <button class="menu-toggle js-open-menu" type="button">
+        <svg class="heder__icon-menu" width="30" height="30">
+          <use href="./images/icons.svg#icon-mobil-menu"></use>
         </svg>
       </button>
-      <a class="gallery-card__link link" href="/src/page-about.html">Twitter</a>
+      <nav class="main-nav">
+        <ul class="main-nav__list link">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">About</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Services</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Pricing</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Blog</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="header__button" type="button">Contact</button>
     </div>
   </div>
-</section>
+  <div class="menu-container js-menu-container">
+    <button class="menu-toggle js-close-menu" type="button">
+      <svg class="heder__icon-menu" width="30" height="30">
+        <use href="./images/icons.svg#icon-icon-menu-close"></use>
+      </svg>
+    </button>
+    <nav class="menu-nav">
+      <ul class="menu-nav__list">
+        <li class="menu-nav__item">
+          <a class="menu-nav__link" href="#">About</a>
+        </li>
+        <li class="menu-nav__item">
+          <a class="menu-nav__link" href="#">Services</a>
+        </li>
+        <li class="menu-nav__item">
+          <a class="menu-nav__link" href="#">Pricing</a>
+        </li>
+        <li class="menu-nav__item">
+          <a class="menu-nav__link" href="#">Blog</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<script src="./mobile-menu.js"></script>
