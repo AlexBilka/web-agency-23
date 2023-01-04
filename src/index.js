@@ -1,2 +1,3 @@
 import './page-scroller';
-import './portfolio';
+import './portfolio.js';
+import './faq-action.js';
