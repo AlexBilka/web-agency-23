@@ -1,5 +1,5 @@
 .footer {
-    // background-color: var(--color-background-footer);
+    background-color: var(--col-bg-primary);
     padding-top: 60px;
     padding-bottom: 60px;
     margin: 0 auto;
@@ -26,7 +26,21 @@
     }
     }
     
-    .footer-list {
+    .footer__help {
+        max-width: 329px;
+        width: 100%;
+        height: 784px;
+        background-color: var(--col-bg-middle);
+        border-radius: 6px;
+    }
+    
+    .footer__img {
+        top: 32px;
+        right: 27px;
+    }
+    
+
+    .footer__list {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -38,68 +52,7 @@
     }
     }
 
-    .footer-list-list {
-    margin-bottom: 9px;
-    }
 
-    .footer-logo {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.1923;
-    letter-spacing: 0.03em;
-    color: var(--color-change);
-    margin-bottom: 28px;
-    }
-    
-    .footer-logo-color {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.1667;
-    letter-spacing: 0.03em;
-    color: var(--color-white);
-    }
-
-    .footer-address {
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.1428;
-    letter-spacing: 0.03em;
-    color: var(--color-white);
-    margin-bottom: 12px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
-    color: var(--color-change);
-    }
-    }
-
-    .footer-contact {
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.7142;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-    margin-bottom: 12px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
-    color: var(--color-change);
-    }
-    }
-    
-    .logo-and-address {
-    display: flex; 
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    @include desktop {
-        margin-right: 70px;
-        align-items: flex-start;
-    }
-    }
     
     .footer-icons {
     display: flex; 
@@ -158,122 +111,6 @@
     fill: var(--color-white);
     }
     
-    .footer-subscriptione-title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.1428;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--color-white);
-    display: flex;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: center;
-    text-align: left;
-    @include desktop {
-    justify-content: flex-start;
-    margin-left: auto;
-    }
-    }
-    
-    .footer-subscriptione {
-    @include tablet {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    }
-    @include desktop {
-    display: block;
-    text-align: center;
-    align-items: baseline;
-    margin: 0;
-    right: 0;
-    top: 12px;
-    }
-    }
-    
-    .footer-subscriptione-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    @include desktop {
-        flex-wrap: nowrap;
-        align-items: baseline;
-        flex-direction: row;
-    }
-    }
-    
-    .footer-input {
-    max-width: 450px;
-    width: 100%;
-    border-radius: 4px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    background-color: transparent;
-    font-size: 12px;
-    line-height: 1.1667;
-    letter-spacing: 0.01em;
-    color: var(--color-white);
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 16px;
-    cursor: pointer;
-    outline: transparent;
-    transition: border-color 250px cubic-bezier(0.4, 0, 0.2, 1);
-    &:focus {
-    border-color: var(--color-change);
-    }
-    &::placeholder {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-    }
-    margin-top: 20px;
-    margin-bottom: 20px;
-    @include tablet {
-        width: 450px;
-    }
-    @include desktop {
-        width: 358px;
-    }
-    }
-
-    .subscriptione-btm {
-    display: flex;
-    cursor: pointer;
-    align-items: center;
-    justify-content: center;
-    width: 200px;
-    height: 50px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.875;
-    letter-spacing: 0.06em;
-    color: var(--color-white);
-    background-color: var(--color-change);
-    border-radius: 4px;
-    border-color: var(--color-change);
-    padding: 10px 28px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
-    background-color: #188CE8; 
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    }
-    @include desktop {
-    justify-content: flex-start;
-    }
-    }
-    
-    .subscriptione-icon {
-    fill: var(--color-white);
-    margin-left: 10px;
-    }
 
 
 
