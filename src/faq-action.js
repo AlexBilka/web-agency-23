@@ -32,16 +32,19 @@ faqBtnShowlessBusiness.addEventListener('click', hideBusiness);
 function showAgency() {
   faqBtnShowmoreAgency.classList.add('hide-btn');
   faqBtnShowlessAgency.classList.remove('hide-btn');
-  articleOpenAgency.style.maxHeight = '400px';
+   articleOpenAgency.style.maxHeight = '400px';
+  articleOpenAgency.style.overflow = 'visible';
   articleTextAgency.classList.add('animate');
   articleTextAgency.style.maxHeight = '400px';
 }
 function hideAgency() {
   faqBtnShowmoreAgency.classList.remove('hide-btn');
   faqBtnShowlessAgency.classList.add('hide-btn');
+  articleOpenAgency.style.overflow = 'hidden';
   articleOpenAgency.style.maxHeight = '0';
-  articleTextAgency.style.maxHeight = '120px';
+  articleTextAgency.style.maxHeight = '100px';
   articleTextAgency.classList.remove('animate');
+  
 }
 
 function showOutsource() {
