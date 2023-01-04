@@ -1,3 +1,4 @@
+window.addEventListener("load", () => {
 const faqBtnShowmoreAgency = document.querySelector('[js-faq-more-agency]');
 const faqBtnShowlessAgency = document.querySelector('[js-faq-less-agency]');
 const faqBtnShowmoreOutsource = document.querySelector('[js-faq-more-outsource]');
@@ -91,3 +92,4 @@ function hideBusiness() {
   articleTextBusiness.style.maxHeight = '120px';
   articleTextBusiness.classList.remove('animate');
 }
+});
