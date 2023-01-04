@@ -29,15 +29,22 @@
 .video-frame {
   display: flex;
   width: 100%;
-  max-height: 244px;
-  height: calc(315 * 0.155vw);
+  max-height: 186px;
+  height: calc(315 * 0.14vw);
   border-radius: 6px;
+  
+  @include mobile {
+    max-height: 244px;
+    height: 395px;
+  }
+  
   @include tablet {
     max-height: 400px;
     height: 395px;
   }
   
   @include desktop {
+    max-height: 346px;
     height: 41vh;
   }
 }
