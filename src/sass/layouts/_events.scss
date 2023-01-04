@@ -101,18 +101,18 @@
     margin-bottom: 67px;
   }
 
-@include mobile {
+  @include mobile {
     background-image: url(../images/events/events-img-desktop@1x.png);
     width: 338px;
     margin-left: auto;
     margin-right: auto;
 
-@include retina {
+    @include retina {
     background-image: url(../images/events/events-img-desktop@2x.png);
-}
-}
+    }
+  }
 
-@include desktop {
+  @include desktop {
     height: 288px;
     margin-bottom: 0;
   }
@@ -156,14 +156,15 @@
   position: absolute;
   bottom: 0;
   left: 50%;
+  width: 191px;
+  height: 317px;
   margin-right: -50%;
   transform: translate(-50%);
   background-image: url(../images/events/events-woman@1x.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 191px;
-  height: 317px;
+
 
   @include retina {
     background-image: url(../images/events/events-woman@2x.png);
@@ -215,7 +216,7 @@
 }
 
 .events-page__list {
-@include desktop {
+  @include desktop {
     display: flex;
     gap: 30px;
     margin-top: 64px;
@@ -291,20 +292,19 @@
 }
 
 .events-page__desc-link {
-    display: inline-block;
+  display: inline-block;
   font-size: 16px;
   line-height: calc(32px / 16px);
-  color: #ffffff;
+  color: var(--col-bg-light);
   transition: transform var(--cubic-function) var(--animation-time);
-}
 
-.events-page__desc-link:hover,
-.events-page__desc-link:focus {
+  &:hover,
+  &:focus {
     color: var(--col-btn-focus);
     text-shadow: 2px 2px 6px #191a30;
     transform: scale(1.1);
   }
-
+}
 
 .events__link {
   width: 178px;
