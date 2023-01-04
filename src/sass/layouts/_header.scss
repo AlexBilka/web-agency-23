@@ -1,6 +1,7 @@
 .header {
   position: relative;
   padding-top: 16px;
+  padding-bottom: 16px;
   background-color: var(--col-bg-dark);
 }
 
@@ -26,7 +27,7 @@
   }
 }
 
-.heder__icon-menu {
+.header__icon-menu {
   fill: #ffffff;
 }
 
@@ -58,6 +59,12 @@
     background-color: inherit;
     border: 1px solid rgba(255, 255, 255, 0.295743);
     border-radius: 6px;
+
+    &:hover,
+    :focus {
+      color: var(--col-btn-focus);
+      border: 1px solid var(--col-btn-focus);
+    } 
   }
 }
 
@@ -67,7 +74,13 @@
   font-size: 16px;
   line-height: calc(32 / 16);
   text-decoration: none;
+  padding: 16px 16px;
   color: var(--col-text-secondary);
+
+  &:hover,
+  :focus {
+    color: var(--col-btn-focus);
+  }
 }
 
 // menu
@@ -82,6 +95,7 @@
   background-color: #28293e;
   transform: scale(0);
   overflow: auto;
+  text-align: center;
 }
 
 .menu-container.is-open {
@@ -97,6 +111,11 @@
   letter-spacing: -1px;
   text-decoration: none;
   color: #ffffff;
+
+    &:hover,
+  :focus {
+    color: var(--col-btn-focus);
+  }
 }
 
 .menu-nav {
@@ -104,9 +123,30 @@
 }
 
 .menu-nav__list {
-  height: 100%;
+  height: calc(100% - 100px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+
+.menu__btn-contact {
+   display: inline-block;
+    font-family: inherit;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 52px;
+    padding: 16px 18px;
+    padding-top: 22px;
+    text-transform: uppercase;
+    color: var(--col-text-secondary);
+    background-color: inherit;
+    border: 2px solid rgba(255, 255, 255, 0.295743);
+    border-radius: 6px;
+
+    &:hover,
+    :focus {
+      color: var(--col-btn-focus);
+      border: 2px solid var(--col-btn-focus);
+    } 
 }
