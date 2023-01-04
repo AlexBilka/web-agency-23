@@ -94,3 +94,4 @@ function hideBusiness() {
   articleTextBusiness.style.maxHeight = "120px";
   articleTextBusiness.classList.remove("animate");
 }
+});
