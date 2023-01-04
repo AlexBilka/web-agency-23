@@ -2,6 +2,9 @@
   border: var(--border);
   border-radius: 6px;
   overflow: hidden;
+  @include desktop {
+    display: flex;
+  }
 }
 
 .contacts__item {
@@ -12,6 +15,10 @@
   width: 100%;
   &:not(:last-child) {
     border-bottom: var(--border);
+    @include desktop {
+      border-bottom: none;
+      border-right: var(--border);
+    }
   }
 }
 
@@ -33,7 +40,7 @@
 }
 
 .contacts__link {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.6;
   color: var(--col-text-primary);
 }
@@ -51,4 +58,12 @@
 
 .contacts__icon {
   fill: currentColor;
+}
+
+.section--contacts {
+  padding-top: 32px;
+  padding-bottom: 64px;
+  @include desktop {
+    padding-top: 80px;
+  }
 }
