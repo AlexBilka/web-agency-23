@@ -77,7 +77,7 @@
 .events-get-img {
   position: relative;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 479px) {
     padding-bottom: 36px;
   }
 
@@ -87,11 +87,11 @@
 }
 
 .events-get-img__pic {
+  height: 232px;
   background-image: url(../images/events/events-img@1x.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 232px;
 
   @include retina {
     background-image: url(../images/events/events-img@2x.png);
@@ -102,10 +102,10 @@
   }
 
   @include mobile {
-    background-image: url(../images/events/events-img-desktop@1x.png);
     width: 338px;
     margin-left: auto;
     margin-right: auto;
+    background-image: url(../images/events/events-img-desktop@1x.png);
 
     @include retina {
     background-image: url(../images/events/events-img-desktop@2x.png);
@@ -119,19 +119,17 @@
 }
 
 .events-get-img__picture-cloud {
+  width: 226px;
+  height: 194px;
+  margin-left: auto;
+  margin-right: auto;
   background-image: url(../images/events/events-cloud@1x.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 226px;
-  height: 194px;
 
   @include retina {
     background-image: url(../images/events/events-cloud@2x.png);
-  }
-
-  @media screen and (min-width: 400px) {
-    margin: 0 auto;
   }
 
   @include mobile {
@@ -140,12 +138,12 @@
 
   @include desktop {
     display: flex;
+    width: 324px;
+    height: 245px;
     background-image: url(../images/events/events-cloud-desktop@1x.png);
     background-position: 41px 0;
     background-size: 282px 242px;
-    width: 324px;
-    height: 245px;
-
+   
     @include retina {
       background-image: url(../images/events/events-cloud-desktop@2x.png);
     }
@@ -206,12 +204,12 @@
   margin-bottom: 33px;
 
   @include desktop {
+    max-width: 426px;
     font-weight: 800;
     font-size: 56px;
     line-height: calc(64px / 56px);
     letter-spacing: -1px;
     margin: 0 auto;
-    max-width: 426px;
   }
 }
 
