@@ -111,8 +111,8 @@
   color: #ffffff;
   border-radius: 6px;
   padding: 18px 23px;
-  border: none;
-  background-color: transparent;
+  border: 1px solid var(--col-bg-dark);
+  background-color: var(--col-bg-dark);
 
   &:hover,
   :focus {
