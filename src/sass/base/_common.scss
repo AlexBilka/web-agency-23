@@ -18,8 +18,19 @@ html {
 }
 
 .section {
-  padding-bottom: 60px;
+  padding-top: 64px;
+  padding-bottom: 64px;
   background-color: var(--col-bg-primary);
+
+  @include tablet {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  @include desktop {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
 }
 
 .container {
