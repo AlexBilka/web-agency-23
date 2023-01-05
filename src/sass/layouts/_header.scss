@@ -41,30 +41,14 @@
 
 .main-nav__list {
   display: flex;
-  gap: 105px;
+  gap: 70px;
 }
 
 .header__button {
   display: none;
 
   @include desktop {
-    display: inline-block;
-    font-family: inherit;
-    font-weight: 900;
-    font-size: 14px;
-    line-height: 14px;
-    padding: 16px 18px;
-    text-transform: uppercase;
-    color: var(--col-text-secondary);
-    background-color: inherit;
-    border: 1px solid rgba(255, 255, 255, 0.295743);
-    border-radius: 6px;
-
-    &:hover,
-    :focus {
-      color: var(--col-btn-focus);
-      border: 1px solid var(--col-btn-focus);
-    } 
+    display: flex;
   }
 }
 
@@ -112,7 +96,7 @@
   text-decoration: none;
   color: #ffffff;
 
-    &:hover,
+  &:hover,
   :focus {
     color: var(--col-btn-focus);
   }
@@ -131,22 +115,6 @@
 }
 
 .menu__btn-contact {
-   display: inline-block;
-    font-family: inherit;
-    font-weight: 900;
-    font-size: 50px;
-    line-height: 52px;
-    padding: 16px 18px;
-    padding-top: 22px;
-    text-transform: uppercase;
-    color: var(--col-text-secondary);
-    background-color: inherit;
-    border: 2px solid rgba(255, 255, 255, 0.295743);
-    border-radius: 6px;
-
-    &:hover,
-    :focus {
-      color: var(--col-btn-focus);
-      border: 2px solid var(--col-btn-focus);
-    } 
+  margin-left: auto;
+  margin-right: auto;
 }
