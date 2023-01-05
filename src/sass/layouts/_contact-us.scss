@@ -4,8 +4,20 @@
   padding-top: 32px;
   padding-bottom: 48px;
   border-radius: 6px;
-
   background-color: var(--col-bg-middle);
+  overflow: hidden;
+
+  @include desktop {
+    padding-left: 100px;
+    padding-right: 70px;
+    padding-top: 55px;
+    padding-bottom: 72px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 95px;
+    align-items: center;
+  }
 }
 
 .contact-us__img-wrap {
@@ -18,7 +30,8 @@
     url(../images/contact-us/contact-us-star.svg),
     url(../images/contact-us/contact-us-circle-with-arrow.svg);
   background-size: 136px, 156px, 156px, 116px, 200px;
-  background-position: 0 127px, 117px 43px, 117px 26px, 1px 1px, 37px 62px;
+  background-position: left 0px bottom 33%, right 0px bottom 51%,
+    right 0px bottom 63%, 0px 0px, left 50% bottom 0px;
   background-repeat: no-repeat;
   margin-left: auto;
   margin-right: auto;
@@ -28,6 +41,19 @@
   animation-name: position;
   animation-duration: 1000ms;
   animation-timing-function: var(--cubic-function);
+
+  @media screen and (max-width: 375px) {
+    height: calc(100vw - 111px);
+    background-size: calc(40vw - 14px), calc(40vw + 6px), calc(40vw + 6px),
+      calc(40vw - 34px), calc(40vw + 50px);
+  }
+
+  @include desktop {
+    margin-bottom: 0px;
+    max-width: 430px;
+    height: 415px;
+    background-size: auto;
+  }
 }
 
 @keyframes position {
@@ -38,12 +64,32 @@
   }
 }
 
+@keyframes translate {
+  0% {
+    transform: translate(-100%);
+  }
+}
+
+.contact-us__text-wrap {
+  transform: translate(0%);
+  animation-name: translate;
+  animation-duration: 1000ms;
+  animation-timing-function: var(--cubic-function);
+}
+
 .contact-us__title {
   font-weight: 800;
   font-size: 40px;
   line-height: 1.2;
   color: var(--col-text-secondary);
   margin-bottom: 15px;
+
+  @include desktop {
+    margin-bottom: 28px;
+    font-size: 56px;
+    line-height: 1.14;
+    letter-spacing: -1px;
+  }
 }
 
 .contact-us__text {
@@ -51,6 +97,10 @@
   line-height: 2;
   color: rgba(255, 255, 255, 0.64);
   margin-bottom: 21px;
+
+  @include desktop {
+    margin-bottom: 34px;
+  }
 }
 
 .contact-us__button {
@@ -74,4 +124,9 @@
     color: var(--col-accent-primary);
     transform: scale(1.05);
   }
+}
+
+.section--contact-us {
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
