@@ -1,9 +1,11 @@
 .btn {
   display: flex;
   align-items: center;
+  width: fit-content;
 
   border-style: none;
   font-family: inherit;
+  text-transform: uppercase;
 
   height: 48px;
   padding-left: 32px;
