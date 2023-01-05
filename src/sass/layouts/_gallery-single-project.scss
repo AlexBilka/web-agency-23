@@ -1,0 +1,121 @@
+.gallery-single-project__container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include desktop {
+    flex-direction: row;
+  }
+}
+
+.video__wrapper {
+  display: flex;
+//   max-width: 750px;
+  width: 100%;
+//   height: auto;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 55%;
+
+  @include desktop {
+    // max-width: 570px;
+  }
+}
+
+.video-frame {
+  display: flex;
+  width: 100%;
+  max-height: 186px;
+  height: calc(315 * 0.14vw);
+  border-radius: 6px;
+  
+  @include mobile {
+    max-height: 244px;
+    height: 395px;
+  }
+  
+  @include tablet {
+    max-height: 400px;
+    height: 395px;
+  }
+  
+  @include desktop {
+    max-height: 346px;
+    height: 41vh;
+  }
+}
+
+.thumbnail__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  gap: 10px;
+  padding: 0;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+  @include tablet {
+    flex-wrap: wrap;
+    flex-basis: 48%;
+  }
+  @include desktop {
+    flex-basis: 48%;
+  }
+
+}
+
+.thumbnail__itembox {
+  position: relative;
+  cursor: pointer;
+  flex-basis: 48%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 6px;
+  transition: opacity 500ms ease;
+  @include tablet {
+    flex-basis: 49%;
+  }
+  @include desktop {
+    
+  }
+}
+
+.thumbnail__img {
+  display: flex;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  transition: transform 250ms;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
+}
+
+.thumbnail__source {
+  border-radius: 6px;
+}
+
+.thumbnail__play-icon {
+  display: none;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transition: opacity 500ms ease;
+  transform: translate(-50%, -50%);
+}
+
+.thumbnail__itembox:hover .thumbnail__play-icon,
+.thumbnail__itembox:focus .thumbnail__play-icon {
+  display: block;
+  opacity: 1;
+  transition: opacity 500ms ease;
+}

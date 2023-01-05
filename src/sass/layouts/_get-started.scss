@@ -1,0 +1,199 @@
+.get-started {
+  background-color: var(--col-bg-dark);
+  color: var(--col-text-secondary);
+  padding-bottom: 96px;
+  padding-top: 0;
+}
+
+.get-started-page {
+  position: relative;
+  padding: 92px 28px 0 28px;
+  background: var(--col-bg-primary);
+  border-radius: 6px;
+
+  @include tablet {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  @include desktop {
+    padding: 0 96px 0 100px;
+    height: 336px;
+  }
+}
+
+.get-started__wrap {
+  position: relative;
+
+  @include desktop {
+    width: 255px;
+    padding-bottom: 34px;
+  }
+}
+
+.get-started__icon {
+  position: absolute;
+  top: -167px;
+  left: -14px;
+  width: 148px;
+  height: 148px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../images/events/events-star.png);
+}
+
+.get-started__text {
+  font-size: 16px;
+  line-height: calc(32px / 16px);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--col-bg-middle);
+  margin-bottom: 13px;
+}
+
+.get-started__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(32px / 24px);
+  color: var(--col-text-primary);
+  margin-bottom: 23px;
+}
+
+.get-started__link {
+  display: inline-block;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: calc(14px / 14px);
+  text-align: center;
+  text-transform: uppercase;
+  padding: 18px 32px;
+  color: var(--col-text-secondary);
+  background: var(--col-bg-middle);
+  border-radius: 6px;
+  margin-bottom: 29px;
+}
+
+.get-started-img {
+  position: relative;
+
+  @media screen and (max-width: 479px) {
+    padding-bottom: 36px;
+  }
+
+  @include desktop {
+    display: flex;
+  }
+}
+
+.get-started-img__pic {
+  height: 232px;
+  background-image: url(../images/events/events-img@1x.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @include retina {
+    background-image: url(../images/events/events-img@2x.png);
+  }
+
+  @media screen and (max-width: 479px) {
+    margin-bottom: 67px;
+  }
+
+  @include mobile {
+    width: 338px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../images/events/events-img-desktop@1x.png);
+
+    @include retina {
+      background-image: url(../images/events/events-img-desktop@2x.png);
+    }
+  }
+
+  @include desktop {
+    height: 288px;
+    margin-bottom: 0;
+  }
+}
+
+.get-started-img__picture-cloud {
+  width: 226px;
+  height: 194px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../images/events/events-cloud@1x.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @include retina {
+    background-image: url(../images/events/events-cloud@2x.png);
+  }
+
+  @include mobile {
+    display: none;
+  }
+
+  @include desktop {
+    display: flex;
+    width: 324px;
+    height: 245px;
+    background-image: url(../images/events/events-cloud-desktop@1x.png);
+    background-position: 41px 0;
+    background-size: 282px 242px;
+
+    @include retina {
+      background-image: url(../images/events/events-cloud-desktop@2x.png);
+    }
+  }
+}
+
+.get-started-img__picture-woman {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 191px;
+  height: 317px;
+  margin-right: -50%;
+  transform: translate(-50%);
+  background-image: url(../images/events/events-woman@1x.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @include retina {
+    background-image: url(../images/events/events-woman@2x.png);
+  }
+
+  @include mobile {
+    display: none;
+  }
+
+  @include desktop {
+    display: block;
+    left: 86%;
+    width: 239px;
+    height: 396px;
+    background-image: url(../images/events/events-woman-desktop@1x.png);
+
+    @include retina {
+      background-image: url(../images/events/events-woman-desktop@2x.png);
+    }
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
