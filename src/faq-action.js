@@ -1,3 +1,4 @@
+window.addEventListener("load", () => {
 const faqBtnShowmoreAgency = document.querySelector(".btn-more-agency");
 const faqBtnShowlessAgency = document.querySelector(".btn-less-agency");
 const faqBtnShowmoreOutsource = document.querySelector(".btn-more-outsource");
