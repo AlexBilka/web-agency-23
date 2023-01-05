@@ -1,0 +1,112 @@
+.about.section {
+    padding-top: 71px;
+
+    @include desktop {
+        padding-top: 101px;
+    }
+}
+
+.about__canvas {
+    max-width: 329px;
+    height: 340px;
+
+    margin-bottom: 16px;
+
+    @media screen and (max-width: 767px) {
+        background-image: url(/src/images/about/mob-bg-1x.png);
+        background-repeat: no-repeat;
+
+        @include retina {
+            background-image: url(/src/images/about/mob-bg-2x.png);
+        }
+    }
+
+
+    @include tablet {
+        max-width: 566px;
+        height: 585px;
+
+        margin-bottom: 161px;
+
+        background-image: url(/src/images/about/desktop-bg7-1x.png), 
+        url(/src/images/about/desktop-bg6-1x.png), 
+        url(/src/images/about/desktop-bg5-1x.jpg),
+        url(/src/images/about/desktop-bg4-1x.png),
+        url(/src/images/about/desktop-bg3-1x.png),
+        url(/src/images/about/desktop-bg2-1x.png),
+        url(/src/images/about/desktop-bg1-1x.png);
+        background-repeat: no-repeat;
+        background-position: left 31px bottom, left bottom 1px, top 155px right, top    27px right, top right 13px, left 16px top 76px, left 68px top 15px;
+
+        @include retina {
+            background-image: url(/src/images/about/desktop-bg7-2x.png), 
+            url(/src/images/about/desktop-bg6-2x.png), 
+            url(/src/images/about/desktop-bg5-2x.jpg),
+            url(/src/images/about/desktop-bg4-2x.png),
+            url(/src/images/about/desktop-bg3-2x.png),
+            url(/src/images/about/desktop-bg2-2x.png),
+            url(/src/images/about/desktop-bg1-2x.png);
+        }
+    }
+}
+
+// .about-card {
+
+// }
+
+.about-card__link.link {
+    margin-bottom: 18px;
+
+    @include desktop {
+        margin-bottom: 20px;
+    }
+}
+
+.about__link--text {
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(32 / 16);   
+    
+    letter-spacing: 3px;
+    text-transform: uppercase;   
+    
+    color: #EF6D58;    
+}
+
+.about__title {
+    margin-bottom: 28px;
+
+    font-size: 36px;
+    line-height: calc(48 / 36);
+
+    @include desktop {
+        margin-bottom: 26px;
+
+        font-size: 56px;
+        line-height: calc(64 / 56);        
+        letter-spacing: -1px;
+    }
+}
+
+.about-card__description {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: calc(32 / 20);
+
+    margin-bottom: 18px;
+}
+
+.about__description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(32 / 16);
+    color: var(--color-text-inactive-dark);
+
+    margin-bottom: 32px;
+
+    @include desktop {
+        margin-bottom: 34px;
+    }
+}
