@@ -325,3 +325,14 @@ a {
     line-height: calc(32 / 16);
   }
 }
+.service__link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(32 / 16);
+  color: #391400;
+  transition: color var(--animation-time) var(--cubic-function);
+  &:hover,
+  &:focus {
+    color: var(--col-btn-focus);
+  }
+}

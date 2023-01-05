@@ -6,6 +6,7 @@
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
+   
   }
 }
 .services__uptitle {
@@ -81,6 +82,7 @@
 }
 
 .services__item {
+  min-width: 275px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -132,11 +134,11 @@
 }
 
 .services__icon {
-  word-break: break-all;
   hyphens: manual;
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: start;
   font-weight: 800;
   font-size: 40px;
   line-height: calc(48 / 40);
@@ -144,16 +146,20 @@
 }
 .services__icon::before {
   content: '';
-  display: flex;
-  margin-right: 10px;
+  display: block;
+  margin-right: 15px;
   width: 80px;
   height: 80px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   border-radius: 50%;
   background-color: #ef6c57;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 32px 32px;
-  background-image: url(../images/service/chair.svg);
+  // background-size: 32px 32px;
+
   @media screen and (min-width: 380px) {
     margin-right: 33px;
   }
@@ -164,8 +170,13 @@
     margin-right: 36px;
   }
 }
+.services__icon.design::before {
+  background-image: url(../images/service/chair.svg);
+}
 .services__icon.development::before {
   background-image: url(../images/service/case.svg);
+  padding-top: 26px;
+  padding-bottom: 28px;
 }
 .services__icon.marketing::before {
   background-image: url(../images/service/gear.svg);
@@ -193,7 +204,12 @@
   background-image: url(../images/service/path.svg);
   background-position: center;
   background-repeat: no-repeat;
+  cursor: pointer;
+  transition: scale var(--animation-time) var(--cubic-function);
 }
 .info__switch:checked ~ .info__click::after {
   transform: rotate(180deg);
+}
+.info__click:hover::after {
+  scale: (1.3);
 }
