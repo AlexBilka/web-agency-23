@@ -15,7 +15,7 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    gap: 95px;
+    gap: 75px;
     align-items: center;
   }
 }
@@ -30,24 +30,30 @@
     url(../images/contact-us/contact-us-star.svg),
     url(../images/contact-us/contact-us-circle-with-arrow.svg);
   background-size: 136px, 156px, 156px, 116px, 200px;
-  background-position: left 0px bottom 33%, right 0px bottom 51%,
-    right 0px bottom 63%, 0px 0px, left 50% bottom 0px;
+  background-position: left -120% bottom 33%, right -200% bottom 51%,
+    right 0px bottom 500%, -100% -100%, left 50% bottom -400%;
   background-repeat: no-repeat;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 37px;
   background-color: rgba(255, 255, 255, 0);
 
-  animation-name: position;
+  animation-name: position-shown;
   animation-duration: 1000ms;
   animation-timing-function: var(--cubic-function);
+  animation-fill-mode: forwards;
+  &.active {
+    animation-name: position-hide;
+    animation-duration: 1000ms;
+    animation-timing-function: var(--cubic-function);
+    animation-fill-mode: forwards;
+  }
 
   @media screen and (max-width: 375px) {
     height: calc(100vw - 111px);
     background-size: calc(40vw - 14px), calc(40vw + 6px), calc(40vw + 6px),
       calc(40vw - 34px), calc(40vw + 50px);
   }
-
   @include desktop {
     margin-bottom: 0px;
     max-width: 430px;
@@ -56,25 +62,56 @@
   }
 }
 
-@keyframes position {
+@keyframes position-hide {
   0% {
-    background-position: -200px 127px, 317px 43px, 317px 26px, 111px 111px,
-      58px 48px;
-    rotate: 66deg;
+    background-position: left -120% bottom 33%, right -200% bottom 51%,
+      right 0px bottom 500%, -100% -100%, left 50% bottom -400%;
+  }
+  100% {
+    background-position: left 0px bottom 33%, right 0px bottom 51%,
+      right 0px bottom 63%, 0px 0px, left 50% bottom 0px;
+  }
+}
+@keyframes position-shown {
+  0% {
+    background-position: left 0px bottom 33%, right 0px bottom 51%,
+      right 0px bottom 63%, 0px 0px, left 50% bottom 0px;
+  }
+  100% {
+    background-position: left -120% bottom 33%, right -200% bottom 51%,
+      right 0px bottom 500%, -100% -100%, left 50% bottom -400%;
   }
 }
 
-@keyframes translate {
+@keyframes translate-hide {
   0% {
-    transform: translate(-100%);
+    transform: translate(-120%);
+  }
+  100% {
+    transform: translate(0%);
+  }
+}
+@keyframes translate-shown {
+  0% {
+    transform: translate(0%);
+  }
+  100% {
+    transform: translate(-120%);
   }
 }
 
 .contact-us__text-wrap {
-  transform: translate(0%);
-  animation-name: translate;
+  transform: translate(-120%);
+  animation-name: translate-shown;
   animation-duration: 1000ms;
   animation-timing-function: var(--cubic-function);
+  animation-fill-mode: forwards;
+  &.active {
+    animation-name: translate-hide;
+    animation-duration: 1000ms;
+    animation-timing-function: var(--cubic-function);
+    animation-fill-mode: forwards;
+  }
 }
 
 .contact-us__title {
