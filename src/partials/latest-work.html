@@ -1,24 +1,579 @@
-<section class="about section example" id="about">
-  <div class="about__container container">
-    <h2 class="about__title section-title">Latest-work</h2>
-    <div class="gallery-card">
-      <h3 class="gallery-card__title">Lorem ipsum</h3>
-      <p class="gallery-card__description">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
-        officiis.
-      </p>
-      <button
-        class="gallery-card__button btn"
-        type="button"
-        data-modal-follow-open
-      >
-        action
-        <svg class="gallery-card__icon" width="12" height="12">
-          <use href="./images/icons.svg#icon-arrow-btn"></use>
-        </svg>
-      </button>
-      <a class="gallery-card__link link" href="/src/page-portfolio.html"
-        >Portfolio</a
+<section class="latest-work section">
+  <div class="latest-work__container container">
+    <p class="latest-work__uppertitle">latest-work</p>
+    <h2 class="latest-work__title">Latest Work</h2>
+    <div class="latest-work__gallery">
+      <div class="latest-work__filters">
+        <button
+          type="button"
+          class="filter-btn btn--all active"
+          data-name="all"
+        >
+          Show All <span class="all-count"></span>
+        </button>
+        <button type="button" class="filter-btn btn--design" data-name="design">
+          Design<span class="design-count"></span>
+        </button>
+        <button
+          type="button"
+          class="filter-btn btn--branding"
+          data-name="branding"
+        >
+          Branding<span class="branding-count"></span>
+        </button>
+        <button
+          type="button"
+          class="filter-btn btn--illustration"
+          data-name="illustration"
+        >
+          illustration<span class="illustration-count"></span>
+        </button>
+        <button type="button" class="filter-btn btn--motion" data-name="motion">
+          Motion<span class="motion-count"></span>
+        </button>
+      </div>
+      <div class="latest-work__wrapper">
+        <div class="img__wrapper img--design" data-name="design">
+          <a href="./page-single-project.html">
+            <div class="img-title__wrapper">
+              <p class="img__section-title">Design</p>
+            </div>
+            <p class="img__name">CIRCLES</p>
+            <picture class="img-design">
+              <source
+                srcset="
+                  ./images/latest-work/desk/design1-desk@1x.jpg 1x,
+                  ./images/latest-work/desk/design1-desk@2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/latest-work/mob/design1-mob@1x.jpg 1x,
+                  ./images/latest-work/mob/design1-mob@2x.jpg 2x
+                "
+                media="(min-width: 320px)"
+              />
+              <img
+                class="img"
+                src="./images/latest-work/desk/design1-desk@1x.jpg"
+                height="420"
+                alt=""
+              />
+            </picture>
+          </a>
+        </div>
+        <div class="img__wrapper img--branding" data-name="branding">
+          <a href="./page-single-project.html">
+            <div class="img-title__wrapper">
+              <p class="img__section-title">Branding</p>
+            </div>
+            <p class="img__name">3D OBJECTS</p>
+            <picture class="img-design">
+              <source
+                srcset="
+                  ./images/latest-work/desk/branding1-desk@1x.jpg 1x,
+                  ./images/latest-work/desk/branding1-desk@2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/latest-work/mob/branding1-mob@1x.jpg 1x,
+                  ./images/latest-work/mob/branding1-mob@2x.jpg 2x
+                "
+                media="(min-width: 320px)"
+              />
+              <img
+                class="img"
+                src="./images/latest-work/desk/branding1-desk@1x.jpg"
+                height="420"
+                alt=""
+              />
+            </picture>
+          </a>
+        </div>
+        <div class="img__wrapper img--illustration" data-name="illustration">
+          <a href="./page-single-project.html">
+            <div class="img-title__wrapper">
+              <p class="img__section-title">Illustration</p>
+            </div>
+            <p class="img__name">FLOWERS</p>
+            <picture class="img-design">
+              <source
+                srcset="
+                  ./images/latest-work/desk/illustration1-desk@1x.jpg 1x,
+                  ./images/latest-work/desk/illustration1-desk@2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/latest-work/mob/illustration1-mob@1x.jpg 1x,
+                  ./images/latest-work/mob/illustration1-mob@2x.jpg 2x
+                "
+                media="(min-width: 320px)"
+              />
+              <img
+                class="img"
+                src="./images/latest-work/desk/illustration1-desk@1x.jpg"
+                height="420"
+                alt=""
+              />
+            </picture>
+          </a>
+        </div>
+        <div class="img__wrapper img--motion" data-name="motion">
+          <a href="./page-single-project.html">
+            <div class="img-title__wrapper">
+              <p class="img__section-title">Motion</p>
+            </div>
+            <p class="img__name">BOUNCE</p>
+            <picture class="img-design">
+              <source
+                srcset="
+                  ./images/latest-work/desk/motion1-desk@1x.jpg 1x,
+                  ./images/latest-work/desk/motion1-desk@2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/latest-work/mob/motion1-mob@1x.jpg 1x,
+                  ./images/latest-work/mob/motion1-mob@2x.jpg 2x
+                "
+                media="(min-width: 320px)"
+              />
+              <img
+                class="img"
+                src="./images/latest-work/desk/motion1-desk@1x.jpg"
+                height="420"
+                alt=""
+              />
+            </picture>
+          </a>
+        </div>
+        <div class="img__wrapper img--design" data-name="design">
+          <a href="./page-single-project.html">
+            <div class="img-title__wrapper">
+              <p class="img__section-title">Design</p>
+            </div>
+            <p class="img__name">WATER</p>
+            <picture class="img-design">
+              <source
+                srcset="
+                  ./images/latest-work/desk/design2-desk@1x.jpg 1x,
+                  ./images/latest-work/desk/design2-desk@2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/latest-work/mob/design2-mob@1x.jpg 1x,
+                  ./images/latest-work/mob/design2-mob@2x.jpg 2x
+                "
+                media="(min-width: 320px)"
+              />
+              <img
+                class="img"
+                src="./images/latest-work/desk/design2-desk@1x.jpg"
+                height="420"
+                alt=""
+              />
+            </picture>
+          </a>
+        </div>
+        <div class="img__wrapper img--illustration" data-name="illustration">
+          <a href="./page-single-project.html">
+            <div class="img-title__wrapper">
+              <p class="img__section-title">Illustration</p>
+            </div>
+            <p class="img__name">OCEAN</p>
+            <picture class="img-design">
+              <source
+                srcset="
+                  ./images/latest-work/desk/illustration2-desk@1x.jpg 1x,
+                  ./images/latest-work/desk/illustration2-desk@2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/latest-work/mob/illustration2-mob@1x.jpg 1x,
+                  ./images/latest-work/mob/illustration2-mob@2x.jpg 2x
+                "
+                media="(min-width: 320px)"
+              />
+              <img
+                class="img"
+                src="./images/latest-work/desk/illustration2-desk@1x.jpg"
+                height="420"
+                alt=""
+              />
+            </picture>
+          </a>
+        </div>
+        <div class="img__wrapper img--motion" data-name="motion">
+          <a href="./page-single-project.html">
+            <div class="img-title__wrapper">
+              <p class="img__section-title">Motion</p>
+            </div>
+            <p class="img__name">SOFA</p>
+            <picture class="img-design">
+              <source
+                srcset="
+                  ./images/latest-work/desk/motion2-desk@1x.jpg 1x,
+                  ./images/latest-work/desk/motion2-desk@2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/latest-work/mob/motion2-mob@1x.jpg 1x,
+                  ./images/latest-work/mob/motion2-mob@2x.jpg 2x
+                "
+                media="(min-width: 320px)"
+              />
+              <img
+                class="img"
+                src="./images/latest-work/desk/motion2-desk@1x.jpg"
+                width="420"
+                alt=""
+              />
+            </picture>
+          </a>
+        </div>
+        <div class="img__wrapper img--design" data-name="design">
+          <a href="./page-single-project.html">
+            <div class="img-title__wrapper">
+              <p class="img__section-title">Design</p>
+            </div>
+            <p class="img__name">Crystals</p>
+            <picture class="img-design">
+              <source
+                srcset="
+                  ./images/latest-work/desk/design3-desk@1x.jpg 1x,
+                  ./images/latest-work/desk/design3-desk@2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/latest-work/mob/design3-mob@1x.jpg 1x,
+                  ./images/latest-work/mob/design3-mob@2x.jpg 2x
+                "
+                media="(min-width: 320px)"
+              />
+              <img
+                class="img"
+                src="./images/latest-work/desk/design3-desk@1x.jpg"
+                height="420"
+                alt=""
+              />
+            </picture>
+          </a>
+        </div>
+        <div class="img__wrapper img--branding" data-name="branding">
+          <a href="./page-single-project.html">
+            <div class="img-title__wrapper">
+              <p class="img__section-title">Branding</p>
+            </div>
+            <p class="img__name">SOFA</p>
+            <picture class="img-design">
+              <source
+                srcset="
+                  ./images/latest-work/desk/branding2-desk@1x.jpg 1x,
+                  ./images/latest-work/desk/branding2-desk@2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/latest-work/mob/branding2-mob@1x.jpg 1x,
+                  ./images/latest-work/mob/branding2-mob@2x.jpg 2x
+                "
+                media="(min-width: 320px)"
+              />
+              <img
+                class="img"
+                src="./images/latest-work/desk/branding2-desk@1x.jpg"
+                height="420"
+                alt=""
+              />
+            </picture>
+          </a>
+        </div>
+        <div class="img__wrapper img--branding" data-name="branding">
+          <a href="./page-single-project.html">
+            <div class="img-title__wrapper">
+              <p class="img__section-title">Branding</p>
+            </div>
+            <p class="img__name">SOFA</p>
+            <picture class="img-design">
+              <source
+                srcset="
+                  ./images/latest-work/desk/branding3-desk@1x.jpg 1x,
+                  ./images/latest-work/desk/branding3-desk@2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/latest-work/mob/branding3-mob@1x.jpg 1x,
+                  ./images/latest-work/mob/branding3-mob@2x.jpg 2x
+                "
+                media="(min-width: 320px)"
+              />
+              <img
+                class="img"
+                src="./images/latest-work/desk/branding3-desk@1x.jpg"
+                height="420"
+                alt=""
+              />
+            </picture>
+          </a>
+        </div>
+        <div class="img__wrapper img--branding" data-name="branding">
+          <a href="./page-single-project.html">
+            <div class="img-title__wrapper">
+              <p class="img__section-title">Branding</p>
+            </div>
+            <p class="img__name">SOFA</p>
+            <picture class="img-design">
+              <source
+                srcset="
+                  ./images/latest-work/desk/motion3-desk@1x.jpg 1x,
+                  ./images/latest-work/desk/motion3-desk@2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/latest-work/mob/motion3-mob@1x.jpg 1x,
+                  ./images/latest-work/mob/motion3-mob@2x.jpg 2x
+                "
+                media="(min-width: 320px)"
+              />
+              <img
+                class="img"
+                src="./images/latest-work/desk/motion3-desk@1x.jpg"
+                height="420"
+                alt=""
+              />
+            </picture>
+          </a>
+        </div>
+        <div class="img__wrapper img--design" data-name="design">
+          <a href="./page-single-project.html">
+            <div class="img-title__wrapper">
+              <p class="img__section-title">Design</p>
+            </div>
+            <p class="img__name">FLOWER</p>
+            <picture class="img-design">
+              <source
+                srcset="
+                  ./images/latest-work/desk/design4-desk@1x.jpg 1x,
+                  ./images/latest-work/desk/design4-desk@2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/latest-work/mob/design4-mob@1x.jpg 1x,
+                  ./images/latest-work/mob/design4-mob@2x.jpg 2x
+                "
+                media="(min-width: 320px)"
+              />
+              <img
+                class="img"
+                src="./images/latest-work/desk/design4-desk@1x.jpg"
+                height="420"
+                alt=""
+              />
+            </picture>
+          </a>
+        </div>
+        <div class="img__wrapper img--branding" data-name="branding">
+          <a href="./page-single-project.html">
+            <div class="img-title__wrapper">
+              <p class="img__section-title">Branding</p>
+            </div>
+            <p class="img__name">SOFA</p>
+            <picture class="img-design">
+              <source
+                srcset="
+                  ./images/latest-work/desk/branding4-desk@1x.jpg 1x,
+                  ./images/latest-work/desk/branding4-desk@2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/latest-work/mob/branding4-mob@1x.jpg 1x,
+                  ./images/latest-work/mob/branding4-mob@2x.jpg 2x
+                "
+                media="(min-width: 320px)"
+              />
+              <img
+                class="img"
+                src="./images/latest-work/desk/branding4-desk@1x.jpg"
+                height="420"
+                alt=""
+              />
+            </picture>
+          </a>
+        </div>
+        <div class="img__wrapper img--illustration" data-name="illustration">
+          <a href="./page-single-project.html">
+            <div class="img-title__wrapper">
+              <p class="img__section-title">Illustration</p>
+            </div>
+            <p class="img__name">FLOWER</p>
+            <picture class="img-design">
+              <source
+                srcset="
+                  ./images/latest-work/desk/illustration3-desk@1x.jpg 1x,
+                  ./images/latest-work/desk/illustration3-desk@2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/latest-work/mob/illustration3-mob@1x.jpg 1x,
+                  ./images/latest-work/mob/illustration3-mob@2x.jpg 2x
+                "
+                media="(min-width: 320px)"
+              />
+              <img
+                class="img"
+                src="./images/latest-work/desk/illustration3-desk@1x.jpg"
+                height="420"
+                alt=""
+              />
+            </picture>
+          </a>
+        </div>
+        <div class="img__wrapper img--illustration" data-name="illustration">
+          <a href="./page-single-project.html">
+            <div class="img-title__wrapper">
+              <p class="img__section-title">Illustration</p>
+            </div>
+            <p class="img__name">WATER PLANT</p>
+            <picture class="img-design">
+              <source
+                srcset="
+                  ./images/latest-work/desk/illustration4-desk@1x.jpg 1x,
+                  ./images/latest-work/desk/illustration4-desk@2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/latest-work/mob/illustration4-mob@1x.jpg 1x,
+                  ./images/latest-work/mob/illustration4-mob@2x.jpg 2x
+                "
+                media="(min-width: 320px)"
+              />
+              <img
+                class="img"
+                src="./images/latest-work/desk/illustration4-desk@1x.jpg"
+                height="420"
+                alt=""
+              />
+            </picture>
+          </a>
+        </div>
+        <div class="img__wrapper img--branding" data-name="branding">
+          <a href="./page-single-project.html">
+            <div class="img-title__wrapper">
+              <p class="img__section-title">Branding</p>
+            </div>
+            <p class="img__name">SOFA</p>
+            <picture class="img-design">
+              <source
+                srcset="
+                  ./images/latest-work/desk/motion4-desk@1x.jpg 1x,
+                  ./images/latest-work/desk/motion4-desk@2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/latest-work/mob/motion4-mob@1x.jpg 1x,
+                  ./images/latest-work/mob/motion4-mob@2x.jpg 2x
+                "
+                media="(min-width: 320px)"
+              />
+              <img
+                class="img"
+                src="./images/latest-work/desk/motion4-desk@1x.jpg"
+                height="420"
+                alt=""
+              />
+            </picture>
+          </a>
+        </div>
+        <div class="img__wrapper img--motion" data-name="motion">
+          <a href="./page-single-project.html">
+            <div class="img-title__wrapper">
+              <p class="img__section-title">Motion</p>
+            </div>
+            <p class="img__name">BALLS</p>
+            <picture class="img-design">
+              <source
+                srcset="
+                  ./images/latest-work/desk/motion5-desk@1x.jpg 1x,
+                  ./images/latest-work/desk/motion5-desk@2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/latest-work/mob/motion5-mob@1x.jpg 1x,
+                  ./images/latest-work/mob/motion5-mob@2x.jpg 2x
+                "
+                media="(min-width: 320px)"
+              />
+              <img
+                class="img"
+                src="./images/latest-work/desk/motion5-desk@1x.jpg"
+                width="420"
+                alt=""
+              />
+            </picture>
+          </a>
+        </div>
+        <div class="img__wrapper img--motion" data-name="motion">
+          <a href="./page-single-project.html">
+            <div class="img-title__wrapper">
+              <p class="img__section-title">Motion</p>
+            </div>
+            <p class="img__name">Bubbles</p>
+            <picture class="img-design">
+              <source
+                srcset="
+                  ./images/latest-work/desk/motion6-desk@1x.jpg 1x,
+                  ./images/latest-work/desk/motion6-desk@2x.jpg 2x
+                "
+                media="(min-width: 768px)" />
+                <source
+                srcset="
+                  ./images/latest-work/mob/motion6-mob@1x.jpg 1x,
+                  ./images/latest-work/mob/motion6-mob@2x.jpg 2x
+                "
+                media="(min-width: 320px)"
+              />
+              <img
+                class="img"
+                src="./images/latest-work/desk/motion6-desk@1x.jpg"
+                width="420"
+                alt=""
+            /></picture>
+          </a>
+        </div>
+      </div>
+      <a href="./page-portfolio.html" class="showmore-btn btn link"
+        >Explore More</a
       >
     </div>
   </div>

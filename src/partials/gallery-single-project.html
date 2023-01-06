@@ -1,23 +1,93 @@
-<section class="about section example" id="about">
-  <div class="about__container container">
-    <h2 class="about__title section-title">Example</h2>
-    <div class="gallery-card">
-      <h3 class="gallery-card__title">Lorem ipsum</h3>
-      <p class="gallery-card__description">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
-        officiis.
-      </p>
-      <button
-        class="gallery-card__button btn"
-        type="button"
-        data-modal-follow-open
-      >
-        action
-        <svg class="gallery-card__icon" width="12" height="12">
-          <use href="./images/icons.svg#icon-arrow-btn"></use>
+<section class="gallery-single-project section" id="gallery-single-project">
+  <div class="gallery-single-project__container container">
+    <div class="video__wrapper">
+      <iframe
+        class="video-frame"
+        height="315"
+        src="https://www.youtube.com/embed/mE7strcSYPE?controls=0"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <div class="thumbnail__wrapper">
+      <div class="thumbnail__itembox" data-vid="o_l3NiAtoKo">
+        <picture class="thumbnail__img">
+          <source
+            srcset="
+              ./images/gallery/thumbnail-2-desk@1x.jpg 1x,
+              ./images/gallery/thumbnail-2-desk@2x.jpg 2x
+            "
+          />
+          <img
+            class="thumbnail__source"
+            src="./images/gallery/thumbnail-2-desk@2x.jpg"
+            width=""
+            alt="GEOMETRIC MOTION GRAPHIC"
+          />
+        </picture>
+        <svg class="thumbnail__play-icon" width="32" height="32">
+          <use href="./images/icons.svg#icon-video-play"></use>
         </svg>
-      </button>
-      <a class="gallery-card__link link" href="#">Twitter</a>
+      </div>
+      <div class="thumbnail__itembox" data-vid="BcfMpYq6Jfs">
+        <picture class="thumbnail__img">
+          <source
+            srcset="
+              ./images/gallery/thumbnail-3-desk@1x.jpg 1x,
+              ./images/gallery/thumbnail-3-desk@2x.jpg 2x
+            "
+          />
+          <img
+            class="thumbnail__source"
+            src="./images/gallery/thumbnail-3-desk@2x.jpg"
+            width=""
+            alt="Motion graphics portfolio"
+          />
+        </picture>
+        <svg class="thumbnail__play-icon" width="32" height="32">
+          <use href="./images/icons.svg#icon-video-play"></use>
+        </svg>
+      </div>
+      <div class="thumbnail__itembox" data-vid="mE7strcSYPE">
+        <picture class="thumbnail__img">
+          <source
+            srcset="
+              ./images/gallery/thumbnail-4-desk@1x.jpg 1x,
+              ./images/gallery/thumbnail-4-desk@2x.jpg 2x
+            "
+          />
+          <img
+            class="thumbnail__source"
+            src="./images/gallery/thumbnail-4-desk@2x.jpg"
+            width=""
+            alt="Abstract 3D Shapes"
+          />
+        </picture>
+        <svg class="thumbnail__play-icon" width="32" height="32">
+          <use href="./images/icons.svg#icon-video-play"></use>
+        </svg>
+      </div>
+      <div class="thumbnail__itembox" data-vid="tEmg69j-6Nc">
+        <picture class="thumbnail__img">
+          <source
+            srcset="
+              ./images/gallery/thumbnail-1-desk@1x.jpg 1x,
+              ./images/gallery/thumbnail-1-desk@2x.jpg 2x
+            "
+          />
+          <img
+            class="thumbnail__source"
+            src="./images/gallery/thumbnail-1-desk@2x.jpg"
+            width=""
+            alt="T-shirt II 360 Wide Mockup"
+          />
+        </picture>
+        <svg class="thumbnail__play-icon" width="32" height="32">
+          <use href="./images/icons.svg#icon-video-play"></use>
+        </svg>
+      </div>
     </div>
   </div>
 </section>
