@@ -1,64 +1,8 @@
-h2 {
-  font-weight: 800;
-  font-size: 56px;
-  line-height: calc(64 / 56);
-  letter-spacing: -1px;
-  color: #391400;
-}
-h3 {
-  font-weight: 800;
-  font-size: 40px;
-  line-height: calc(48 / 40);
-  color: #391400;
-}
-h4 {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: calc(32 / 24);
-  color: #391400;
-}
-h5 {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: calc(32 / 16);
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: #ef6d58;
-}
-.text__big {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: calc(32 / 20);
-  color: #391400;
-}
-.text__small {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: calc(24 / 14);
-  color: rgba(57, 20, 0, 0.64);
-}
-.text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: calc(32 / 16);
-  color: #391400;
-}
+
 a {
   text-decoration: none;
 }
-// .container {
-//   max-width: 100%;
-//   padding-left: 23px;
-//   padding-right: 23px;
-//   margin: 0 auto;
-//   width: 375px;
 
-//   @include desktop {
-//     max-width: 1200px;
-//     padding-left: 15px;
-//     padding-right: 15px;
-//   }
-// }
 .service__section {
   padding-top: 96px;
   padding-bottom: 50px;
