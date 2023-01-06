@@ -1,0 +1,103 @@
+.new-look {
+    padding-top: 48px;
+    padding-bottom: 52px;
+    background-color: var(--col-bg-primary);
+    // overflow: hidden;
+  
+    @include desktop {
+      padding-left: 135px;
+      padding-right: 135px;
+      padding-top: 95px;
+      padding-bottom: 101px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 75px;
+      align-items: center;
+    }
+  }
+  
+  .new-look__img {
+    max-width: 273px;
+    width: 100%;
+    height: 264px;
+    background-image: url(../images/contact-us/contact-us-white-box.svg),
+      url(../images/contact-us/contact-us-face.png),
+      url(../images/contact-us/contact-us-yellow-arch.svg),
+      url(../images/contact-us/contact-us-star.svg),
+      url(../images/contact-us/contact-us-circle-with-arrow.svg);
+    background-size: 136px, 156px, 156px, 116px, 200px;
+    background-position: left -120% bottom 33%, right -200% bottom 51%,
+      right 0px bottom 500%, -100% -100%, left 50% bottom -400%;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 37px;
+    background-color: rgba(255, 255, 255, 0);
+  
+    @media screen and (max-width: 375px) {
+      height: calc(100vw - 111px);
+      background-size: calc(40vw - 14px), calc(40vw + 6px), calc(40vw + 6px),
+        calc(40vw - 34px), calc(40vw + 50px);
+    }
+    @include desktop {
+      margin-bottom: 0px;
+      max-width: 430px;
+      height: 415px;
+      background-size: auto;
+    }
+  }
+  
+.new-look__uptitle {
+font-family: 'Epilogue';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: calc(32 / 16);
+letter-spacing: 3px;
+text-transform: uppercase;
+color: #EF6D58;
+margin-bottom: 18px;
+  
+@include desktop {
+margin-bottom: 20px;    
+}
+}
+
+.new-look__title {
+font-family: 'Epilogue';
+font-style: normal;
+font-weight: 800;
+font-size: 36px;
+line-height: calc(48 / 36);
+color: #391400;
+margin-bottom: 12px;
+
+@include desktop {
+font-size: 56px;
+line-height: calc(64 / 56);
+letter-spacing: -1px;
+color: #391400;
+margin-bottom: 26px;    
+}
+}
+  
+.new-look__text {
+font-family: 'Epilogue';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: calc(32 / 20);
+color: #391400;
+margin-bottom: 32px;
+    
+@include desktop {
+margin-bottom: 26px;
+}
+}
+  
+.new-look__section {
+padding-top: 64px;
+padding-bottom: 64px;
+}
+  
