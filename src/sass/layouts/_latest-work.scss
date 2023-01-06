@@ -12,8 +12,6 @@
 }
 
 .latest-work__uppertitle {
-  font-family: 'Epilogue';
-  font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 2;
@@ -35,8 +33,6 @@
   }
 }
 .latest-work__title {
-  font-family: 'Epilogue';
-  font-style: normal;
   font-weight: 800;
   font-size: 40px;
   line-height: 1.14;
@@ -69,12 +65,17 @@
 
 .latest-work__filters {
   display: flex;
-  column-gap: 60px;
+  column-gap: 30px;
   row-gap: 10px;
   justify-content: center;
   text-align: center;
   flex-wrap: wrap;
-  margin-bottom: 65px;
+  margin-bottom: 35px;
+
+  @include mobile {
+    column-gap: 60px;
+    margin-bottom: 65px;
+  }
 }
 
 .filter-btn {
@@ -174,38 +175,44 @@
 .img-title__wrapper {
   display: flex;
   position: absolute;
-  bottom: 125px;
-  left: 50px;
+  bottom: 80px;
+  left: 30px;
   padding: 5px 16px 1px 15px;
   border-radius: 19px;
   color: var(--col-text-primary);
   background-color: var(--col-bg-light);
   z-index: 1;
 
-  font-family: 'Epilogue';
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 32px;
+  line-height: calc(32 / 16);
 
-  /* identical to box height, or 200% */
+  @include mobile {
+    font-size: 16px;
+    font-size: 40px;
+    bottom: 125px;
+    left: 50px;
+  }
 }
 
 .img__name {
   display: block;
   position: absolute;
-  bottom: 50px;
-  left: 50px;
-  font-family: 'Epilogue';
-  font-style: normal;
+  bottom: 30px;
+  left: 30px;
   font-weight: 800;
-  font-size: 40px;
-  line-height: 48px;
-  /* identical to box height, or 120% */
+  font-size: 32px;
+  line-height: calc(48 / 40);
   text-transform: uppercase;
   z-index: 2;
 
   color: var(--col-text-secondary);
+
+  @include mobile {
+    font-size: 40px;
+    bottom: 50px;
+    left: 50px;
+  }
 }
 
 .img {
@@ -241,21 +248,26 @@
   cursor: pointer;
 }
 
-.active {
+.filter-btn.active {
+  .all-count,
+  .design-count,
+  .branding-count,
+  .illustration-count,
+  .motion-count {
+    color: var(--col-btn-focus);
+  }
   color: var(--col-btn-focus);
 }
 
 .all-count {
   position: absolute;
-  font-family: 'Epilogue';
-  font-style: normal;
   font-weight: 400;
   font-size: 10px;
   line-height: 1.71;
   text-align: center;
   color: rgba(255, 255, 255, 0.64);
   transform: translateY(-20%);
-
+  transition: all 250ms ease;
   @include tablet {
     font-size: 10px;
   }
@@ -267,8 +279,6 @@
 
 .design-count {
   position: absolute;
-  font-family: 'Epilogue';
-  font-style: normal;
   font-weight: 400;
   font-size: 10px;
   line-height: 1.71;
@@ -287,8 +297,6 @@
 
 .branding-count {
   position: absolute;
-  font-family: 'Epilogue';
-  font-style: normal;
   font-weight: 400;
   font-size: 10px;
   line-height: 1.71;
@@ -307,8 +315,6 @@
 
 .illustration-count {
   position: absolute;
-  font-family: 'Epilogue';
-  font-style: normal;
   font-weight: 400;
   font-size: 10px;
   line-height: 1.71;
@@ -327,8 +333,6 @@
 
 .motion-count {
   position: absolute;
-  font-family: 'Epilogue';
-  font-style: normal;
   font-weight: 400;
   font-size: 10px;
   line-height: 1.71;
