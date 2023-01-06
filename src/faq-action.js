@@ -33,10 +33,10 @@ faqBtnShowlessBusiness.addEventListener("click", hideBusiness);
 function showAgency() {
   faqBtnShowmoreAgency.classList.add("hide-btn");
   faqBtnShowlessAgency.classList.remove("hide-btn");
-   articleOpenAgency.style.maxHeight = "400px";
+   articleOpenAgency.style.maxHeight = "600px";
   articleOpenAgency.style.overflow = "visible";
   articleTextAgency.classList.add("animate");
-  articleTextAgency.style.maxHeight = "400px";
+  articleTextAgency.style.maxHeight = "600px";
 }
 function hideAgency() {
   faqBtnShowmoreAgency.classList.remove("hide-btn");
@@ -51,9 +51,9 @@ function hideAgency() {
 function showOutsource() {
   faqBtnShowmoreOutsource.classList.add("hide-btn");
   faqBtnShowlessOutsource.classList.remove("hide-btn");
-  articleOpenOutsource.style.maxHeight = "400px";
+  articleOpenOutsource.style.maxHeight = "600px";
   articleTextOutsource.classList.add("animate");
-  articleTextOutsource.style.maxHeight = "400px";
+  articleTextOutsource.style.maxHeight = "600px";
 }
 
 function hideOutsource() {
@@ -67,9 +67,9 @@ function hideOutsource() {
 function showMarketing() {
   faqBtnShowmoreMarketing.classList.add("hide-btn");
   faqBtnShowlessMarketing.classList.remove("hide-btn");
-  articleOpenMarketing.style.maxHeight = "400px";
+  articleOpenMarketing.style.maxHeight = "600px";
   articleTextMarketing.classList.add("animate");
-  articleTextMarketing.style.maxHeight = "400px";
+  articleTextMarketing.style.maxHeight = "600px";
 }
 
 function hideMarketing() {
@@ -83,9 +83,9 @@ function hideMarketing() {
 function showBusiness() {
   faqBtnShowmoreBusiness.classList.add("hide-btn");
   faqBtnShowlessBusiness.classList.remove("hide-btn");
-  articleOpenBusiness.style.maxHeight = "400px";
+  articleOpenBusiness.style.maxHeight = "600px";
   articleTextBusiness.classList.add("animate");
-  articleTextBusiness.style.maxHeight = "400px";
+  articleTextBusiness.style.maxHeight = "600px";
 }
 
 function hideBusiness() {
