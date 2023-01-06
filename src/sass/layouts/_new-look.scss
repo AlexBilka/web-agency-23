@@ -1,52 +1,50 @@
 .new-look {
-    padding-top: 48px;
-    padding-bottom: 52px;
-    background-color: var(--col-bg-primary);
-    // overflow: hidden;
+padding-top: 48px;
+padding-bottom: 52px;
+background-color: var(--col-bg-primary);
   
-    @include desktop {
-      padding-left: 135px;
-      padding-right: 135px;
-      padding-top: 95px;
-      padding-bottom: 101px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      gap: 75px;
-      align-items: center;
-    }
+@include desktop {
+padding-left: 135px;
+padding-right: 135px;
+padding-top: 95px;
+padding-bottom: 101px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+}
+}
+  
+.new-look__img {
+max-width: 329px;
+width: 100%;
+height: 328px;
+background-image: url(../images/contact-us/contact-us-white-box.svg),
+  url(../images/contact-us/contact-us-face.png),
+  url(../images/contact-us/contact-us-yellow-arch.svg),
+  url(../images/contact-us/contact-us-star.svg),
+  url(../images/contact-us/contact-us-circle-with-arrow.svg);
+background-size: 136px, 156px, 156px, 116px, 200px;
+background-position: left -120% bottom 33%, right -200% bottom 51%,
+  right 0px bottom 500%, -100% -100%, left 50% bottom -400%;
+background-repeat: no-repeat;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 37px;
+background-color: rgba(255, 255, 255, 0);
+  
+ @media screen and (max-width: 375px) {
+  height: calc(100vw - 111px);
+  background-size: calc(40vw - 14px), calc(40vw + 6px), calc(40vw + 6px),
+  calc(40vw - 34px), calc(40vw + 50px);
   }
-  
-  .new-look__img {
-    max-width: 273px;
-    width: 100%;
-    height: 264px;
-    background-image: url(../images/contact-us/contact-us-white-box.svg),
-      url(../images/contact-us/contact-us-face.png),
-      url(../images/contact-us/contact-us-yellow-arch.svg),
-      url(../images/contact-us/contact-us-star.svg),
-      url(../images/contact-us/contact-us-circle-with-arrow.svg);
-    background-size: 136px, 156px, 156px, 116px, 200px;
-    background-position: left -120% bottom 33%, right -200% bottom 51%,
-      right 0px bottom 500%, -100% -100%, left 50% bottom -400%;
-    background-repeat: no-repeat;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 37px;
-    background-color: rgba(255, 255, 255, 0);
-  
-    @media screen and (max-width: 375px) {
-      height: calc(100vw - 111px);
-      background-size: calc(40vw - 14px), calc(40vw + 6px), calc(40vw + 6px),
-        calc(40vw - 34px), calc(40vw + 50px);
-    }
-    @include desktop {
-      margin-bottom: 0px;
-      max-width: 430px;
-      height: 415px;
-      background-size: auto;
-    }
-  }
+@include desktop {
+  margin-bottom: 0px;
+   max-width: 529px;
+  height: 551px;
+  background-size: auto;
+ }
+}
   
 .new-look__uptitle {
 font-family: 'Epilogue';
@@ -94,10 +92,5 @@ margin-bottom: 32px;
 @include desktop {
 margin-bottom: 26px;
 }
-}
-  
-.new-look__section {
-padding-top: 64px;
-padding-bottom: 64px;
 }
   
