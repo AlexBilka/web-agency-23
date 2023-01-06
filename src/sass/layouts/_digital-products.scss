@@ -66,7 +66,6 @@ a {
     padding-top: 213px;
     padding-bottom: 128px;
   }
-  
 }
 .service__wrap {
   width: 100%;
@@ -117,13 +116,16 @@ a {
       url(../images/service/purple.png), url(../images/service/block.png),
       url(../images/service/swirl-1.png), url(../images/service/swirl-2.png),
       url(../images/service/triangle.png), url(../images/service/star.png);
-      @include retina {
-        background-image: url(../images/service/girl-2x.png),
+    @include retina {
+      background-image: url(../images/service/girl-2x.png),
         url(../images/service/circle-2x.png), url(../images/service/boy-2x.png),
-        url(../images/service/purple-2x.png), url(../images/service/block-2x.png),
-        url(../images/service/swirl-1-2x.png), url(../images/service/swirl-2-2x.png),
-        url(../images/service/triangle-2x.png), url(../images/service/star-2x.png);
-      }
+        url(../images/service/purple-2x.png),
+        url(../images/service/block-2x.png),
+        url(../images/service/swirl-1-2x.png),
+        url(../images/service/swirl-2-2x.png),
+        url(../images/service/triangle-2x.png),
+        url(../images/service/star-2x.png);
+    }
     background-repeat: no-repeat;
     background-size: 192px 194px, 211px 211px, 193px 274px, 246px 305px,
       262px 238px, 122px 148px, 51px 211px, 570px 464px, 147px 146px;
@@ -143,6 +145,12 @@ a {
   }
 }
 .service__up {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(32 / 16);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #ef6d58;
   margin-bottom: 18px;
   @include tablet {
     margin-bottom: 18px;
@@ -154,12 +162,13 @@ a {
 .service__title {
   margin-bottom: 12px;
   font-weight: 800;
-  font-size: 36px;
-  line-height: calc(48 / 36);
+  font-size: 40px;
+  line-height: calc(48 / 40);
+  color: #391400;
   @include tablet {
     margin-bottom: 12px;
-    font-size: 36px;
-    line-height: calc(48 / 36);
+    font-size: 40px;
+    line-height: calc(48 / 40);
   }
   @include desktop {
     margin-bottom: 26px;
@@ -170,11 +179,19 @@ a {
 }
 .service__description {
   margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: calc(32 / 20);
+  color: #391400;
   @include tablet {
     margin-bottom: 30px;
   }
   @include desktop {
     margin-bottom: 37px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: calc(32 / 20);
+    
   }
 }
 .qout__wrap {
@@ -192,7 +209,7 @@ a {
   height: 64px;
   border-radius: 50%;
   padding: 6px 8px 0px 9px;
-  background-color: #F7CB47;
+  background-color: #f7cb47;
   margin-right: 20px;
 }
 
@@ -200,16 +217,32 @@ a {
   display: block;
   padding-top: 8px;
   max-width: 245px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  color: rgba(57, 20, 0, 0.64);
   @include desktop {
     margin-bottom: 12px;
     max-width: 386px;
   }
 }
+.service__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(32 / 16);
+  color: #391400;
+}
 
 .service__down {
-  margin-bottom: 18px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(32 / 16);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #ef6d58;
+  margin-bottom: 17px;
   @include tablet {
-    margin-bottom: 18px;
+    margin-bottom: 17px;
   }
   @include desktop {
     margin-bottom: 17px;
@@ -219,16 +252,16 @@ a {
 .service-agency__title {
   margin-bottom: 34px;
   font-weight: 800;
-  font-size: 36px;
-  line-height: calc(48 / 36);
+  font-size: 40px;
+  line-height: calc(48 / 40);
+  color: #391400;
   @include tablet {
     width: 336px;
   }
   @include desktop {
     width: 346px;
     margin-bottom: 35px;
-    font-size: 40px;
-    line-height: calc(48 / 40);
+   
   }
 }
 
@@ -284,6 +317,10 @@ a {
 
 .service__name {
   margin-bottom: 19px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(32 / 24);
+  color: #391400;
 }
 .service__name::before {
   content: '';
@@ -303,9 +340,11 @@ a {
     margin-bottom: 41px;
   }
 }
+
 .service__name.design::before {
   background-image: url(../images/service/chair.svg);
 }
+
 .service__name.development::before {
   background-image: url(../images/service/case.svg);
 }
@@ -315,14 +354,16 @@ a {
 .service-agency__text {
   width: 273px;
   max-width: 100%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(32 / 16);
+  color: rgba(57, 20, 0, 0.64);
   @include tablet {
     width: 100%;
   }
   @include desktop {
     width: 294px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: calc(32 / 16);
+    
   }
 }
 .service__link {
@@ -330,9 +371,13 @@ a {
   font-size: 16px;
   line-height: calc(32 / 16);
   color: #391400;
-  transition: color var(--animation-time) var(--cubic-function);
+  transition: all var(--animation-time) var(--cubic-function);
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+ 
   &:hover,
   &:focus {
     color: var(--col-btn-focus);
+    transform: scale(1.05);
   }
 }
