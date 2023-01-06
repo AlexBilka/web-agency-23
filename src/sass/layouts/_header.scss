@@ -108,7 +108,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 60px 60px;
+  padding: 60px 120px;
   background-color: var(--col-bg-primary);
   transform: scale(0);
   overflow: auto;
@@ -119,8 +119,13 @@
   transform: scale(1);
 }
 
+.list-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .menu__logo {
-  display: block;
   margin-bottom: 35px;
 
   @include tablet {
@@ -138,6 +143,7 @@
   @include tablet {
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-end;
   }
 }
 
@@ -192,9 +198,9 @@
   color: #ef6d58;
   margin-bottom: 16px;
 
-   &:hover,
+  &:hover,
   &:focus {
-    color: #28293E;
+    color: #28293e;
   }
 }
 
@@ -224,7 +230,7 @@
   line-height: calc(32 / 16);
   color: #391400;
   text-decoration: none;
-  
+
   &:hover,
   &:focus {
     color: var(--col-btn-hover-light);
