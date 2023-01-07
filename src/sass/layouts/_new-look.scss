@@ -19,6 +19,19 @@ align-items: center;
 max-width: 329px;
 width: 100%;
 height: 328px;
+background-image: url(../images/new-look/bitmap-smile.png),
+url(../images/new-look/mask.png), 
+url(../images/new-look/background.jpg), 
+url(../images/new-look/combined-shape.png), 
+url(../images/new-look/path-beige.png), 
+url(../images/new-look/rectangle-beige.png),
+url(../images/new-look/rectangle-yellow.png);
+  background-size: 113px 169px, 184px 184px, 470px 290px, 261px 120px, 215px 130px, 447px 148px, 316px 181px;
+  
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 37px;
 }
   
 .new-look__uptitle {
