@@ -1,16 +1,22 @@
 .header {
-  position: relative;
+  position: fixed;
+  width: 100%;
   padding-top: 16px;
   padding-bottom: 16px;
   background-color: var(--col-bg-dark);
 }
 
 .header__wrapper {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+.btn-wrap {
+  position: relative;
+  display: flex;
+}
 .menu-toggle {
   position: absolute;
   top: 16px;
@@ -32,7 +38,7 @@
   }
 }
 
-.menu-desctop {
+.menu-desktop {
   fill: var(--col-text-secondary);
 
   @include desktop {
@@ -41,10 +47,6 @@
     top: 50%;
     padding: 0;
   }
-}
-
-.header__icon-menu {
-  fill: #ffffff;
 }
 
 .main-nav {
@@ -57,8 +59,8 @@
 
 .main-nav__list {
   display: flex;
-  gap: 55px;
-  margin-left: 100px;
+  gap: 40px;
+  /*margin-left: 100px;*/
 }
 
 .header__button {
@@ -102,25 +104,40 @@
 
 // menu
 
+.menu-wrap {
+  position: relative;
+}
+
 .menu-container {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 60px 60px;
-  background-color: var(--col-bg-primary);
-  transform: scale(0);
+  width: 100vw;
+  height: 100vh;
+  padding: 60px 200px;
+  background-color: var(--col-bg-light);
+  transform: translateY(-100%);
+  transition: transform 250ms ease-in-out;
   overflow: auto;
   text-align: center;
+  box-shadow: 1px 1px 15px 0px var(--color-text-inactive-dark);
+
+  &.is-open {
+    transform: translateY(0);
+  }
+  @include desktop {
+    width: 100vw;
+    height: 320px;
+  }
 }
 
-.menu-container.is-open {
-  transform: scale(1);
+.list-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .menu__logo {
-  display: block;
   margin-bottom: 35px;
 
   @include tablet {
@@ -135,9 +152,10 @@
   flex-direction: column;
   gap: 30px;
 
-  @include tablet {
+  @include desktop {
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-end;
   }
 }
 
@@ -148,10 +166,13 @@
 }
 
 .menu__social-list {
-  display: flex;
+  display: none;
   gap: 8px;
   justify-content: center;
   margin-bottom: 30px;
+  @include tablet {
+    display: flex;
+  }
 }
 
 .menu__social-item {
@@ -162,6 +183,7 @@
   height: 48px;
   background-color: #ef6d58;
   border-radius: 50%;
+  fill: var(--col-bg-light);
 }
 
 .menu__social-link {
@@ -192,9 +214,9 @@
   color: #ef6d58;
   margin-bottom: 16px;
 
-   &:hover,
+  &:hover,
   &:focus {
-    color: #28293E;
+    color: #28293e;
   }
 }
 
@@ -224,7 +246,7 @@
   line-height: calc(32 / 16);
   color: #391400;
   text-decoration: none;
-  
+
   &:hover,
   &:focus {
     color: var(--col-btn-hover-light);
