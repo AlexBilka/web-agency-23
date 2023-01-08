@@ -24,6 +24,9 @@ background-image: url(../images/new-look/all.png);
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 4px;
+  @include retina {
+    background-image: url(../images/new-look/all-2x.png);
+  }
 
   @include desktop {
     max-width: 529px;
@@ -50,16 +53,17 @@ url(../images/new-look/rectangle-yellow.png);
   top 369px right 297px,
   top 55px right 71px,
   top 276px right 19px;
-  // transform: 0, 
-  // 0, 
-  // 0, 
-  // matrix(0.8, -0.6, -0.6, -0.8, 0, 0), 
-  // 0, 
-  // rotate(-32deg), 
-  // rotate(21deg);
+  transform: 0, 
+  0, 
+  0, 
+  matrix(0.8, -0.6, -0.6, -0.8, 0, 0), 
+  0, 
+  rotate(-32deg), 
+  rotate(21deg);
   background-repeat: no-repeat;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 0;
   }
 }
   
