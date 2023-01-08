@@ -31,7 +31,7 @@ url(../images/new-look/rectangle-yellow.png);
   background-repeat: no-repeat;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 37px;
+  margin-bottom: 4px;
 }
   
 .new-look__uptitle {
@@ -82,6 +82,41 @@ margin-bottom: 26px;
 }
 }
  
-// .new-look__icon {
+.soc {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  }
+  
+  .new-look__wrap {
+  display: flex;
+  align-items: center;
+  &:hover,
+  &:focus {
+  background-color: var(--color-change);
+  }
+  }
+  
+  .new-look__item:not(:last-child) {
+    margin-bottom: 16px;
+    }
 
-// }
+.new-look__link {
+  width: 32px;  
+  height: 32px;
+  background-color: var(--col-bg-icon);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+}
+  
+  
+.new-look__icon {
+  fill: #FFFFFF;
+  .soc__link:hover &,
+  .soc__link:focus & {
+  fill: var(--color-white); 
+  }
+  }
