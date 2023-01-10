@@ -1,11 +1,11 @@
 .new-look__container {
-padding-top: 48px;
-padding-bottom: 52px;
+// padding-top: 48px;
+// padding-bottom: 52px;
 background-color: var(--col-bg-primary);
   
 @include desktop {
-padding-top: 95px;
-padding-bottom: 101px;
+// padding-top: 95px;
+// padding-bottom: 101px;
 display: flex;
 flex-direction: row-reverse;
 justify-content: space-between;
