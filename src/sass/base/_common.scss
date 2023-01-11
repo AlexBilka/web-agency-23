@@ -18,8 +18,8 @@ html {
 }
 
 .section {
-  padding-top: 64px;
-  padding-bottom: 64px;
+  padding-top: 48px;
+  padding-bottom: 48px;
   background-color: var(--col-bg-primary);
 
   @include tablet {
@@ -28,8 +28,8 @@ html {
   }
 
   @include desktop {
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-top: 64px;
+    padding-bottom: 64px;
   }
 }
 

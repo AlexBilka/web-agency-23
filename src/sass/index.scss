@@ -3,12 +3,11 @@
 @import './base/reset';
 @import './base/common';
 
+@import './components/logo';
 @import './components/example';
 @import './components/page-scroller';
-@import './components/social';
 @import './components/button';
 @import './components/section-title';
-@import './components/mobile-menu';
 
 @import './layouts/header';
 @import './layouts/hero-home';
@@ -27,6 +26,7 @@
 @import './layouts/team';
 @import './layouts/founder-words';
 @import './layouts/testimonials';
+@import './components/modal-testimonials';
 @import './layouts/pricing';
 @import './layouts/faq';
 @import './layouts/awards';

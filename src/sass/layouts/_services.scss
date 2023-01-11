@@ -1,0 +1,220 @@
+.services__section {
+  padding-top: 76px;
+}
+.description__wrap {
+  @include tablet {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
+.services__uptitle {
+  margin-bottom: 33px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.services__title {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 48px;
+  margin-bottom: 28px;
+  @include tablet {
+    max-width: 329px;
+  }
+  @include desktop {
+    max-width: 470px;
+  }
+}
+.services__description {
+  margin-bottom: 96px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(57, 20, 0, 0.64);
+  @include tablet {
+    max-width: 350px;
+  }
+  @include desktop {
+    max-width: 570px;
+  }
+}
+.design__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(32 / 24);
+  margin-bottom: 28px;
+}
+.design__text {
+  margin-bottom: 44px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(32 / 16);
+  color: rgba(57, 20, 0, 0.64);
+}
+.design__item {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(32 / 16);
+  color: #391400;
+  margin-bottom: 16px;
+}
+.design__item::before {
+  content: '';
+  display: inline-block;
+  margin-right: 16px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #ef6c57;
+  background-image: url(../images/service/checkmark.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.info__switch {
+  display: none;
+}
+
+.services__item {
+  min-width: 275px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border-top: 1px solid #f3d1bf;
+  border-bottom: 1px solid #f3d1bf;
+  @include tablet {
+    width: 100%;
+    padding-top: 47px;
+    padding-bottom: 47px;
+  }
+  @include desktop {
+    width: 100%;
+    padding-top: 47px;
+    padding-bottom: 47px;
+  }
+}
+
+.design__hidden {
+  max-height: 0;
+  overflow: hidden;
+  transition: all var(--animation-time) var(--cubic-function);
+  @include tablet {
+    max-width: 350px;
+    margin-left: auto;
+    @include desktop {
+      max-width: 570px;
+    }
+  }
+}
+.info__switch:checked ~ .design__hidden {
+  max-height: 760px;
+  margin-top: 32px;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  border-top: 1px solid #f3d1bf;
+  @include tablet {
+    border: none;
+    max-width: 350px;
+    margin-left: auto;
+  }
+  @include desktop {
+    max-width: 570px;
+    margin-left: auto;
+  }
+}
+
+.services__icon {
+  hyphens: manual;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: calc(48 / 40);
+  color: #391400;
+  @include tablet {
+    font-size: 56px;
+    line-height: 64px;
+    line-height: calc(64 / 56);
+    letter-spacing: -1px;
+  }
+}
+.services__icon::before {
+  content: '';
+  display: block;
+  margin-right: 15px;
+  width: 80px;
+  height: 80px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-radius: 50%;
+  background-color: #ef6c57;
+  background-position: center;
+  background-repeat: no-repeat;
+  // background-size: 32px 32px;
+
+  @media screen and (min-width: 380px) {
+    margin-right: 33px;
+  }
+  @include tablet {
+    margin-right: 33px;
+  }
+  @include desktop {
+    margin-right: 36px;
+  }
+}
+.services__icon.design::before {
+  background-image: url(../images/service/chair.svg);
+}
+.services__icon.development::before {
+  background-image: url(../images/service/case.svg);
+  padding-top: 26px;
+  padding-bottom: 28px;
+}
+.services__icon.marketing::before {
+  background-image: url(../images/service/gear.svg);
+}
+.info__click {
+  width: 329px;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include tablet {
+    width: 100%;
+  }
+  @include desktop {
+    width: 100%;
+  }
+}
+.info__click::after {
+  content: '';
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #ef6c57;
+  background-image: url(../images/service/path.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: scale var(--animation-time) var(--cubic-function);
+}
+.info__switch:checked ~ .info__click::after {
+  transform: rotate(180deg);
+}
+.info__click:hover::after {
+  transform: scale(1.3);
+}

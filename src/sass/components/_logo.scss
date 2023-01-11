@@ -1,0 +1,16 @@
+.logo {
+  display: flex;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(32 / 24);
+  &__icon {
+    fill: var(--col-accent-primary);
+  }
+  &__text {
+    margin-left: 14px;
+    padding-top: 10px;
+  }
+  &--light {
+    color: var(--col-text-secondary);
+  }
+}
