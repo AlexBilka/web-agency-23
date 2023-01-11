@@ -7,17 +7,41 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  align-content: center;
-  gap: 15px;
+justify-content: center;
+  gap: 30px;
 }
 
 .awards__item {
-  display: flex;
-  // height: 80px;
-  justify-content: stretch;
-  // text-align: center;
+  display: grid;
   align-items: center;
-  // align-content: space-between;
+  justify-content: center;
+  flex-direction: column;
+  @include desktop {
+    flex-direction: row;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+}
+
+.award-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include desktop {
+        flex-direction: row;
+    }
+    
+}
+
+.company-wrapper {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    flex-direction: column;
+
+    @include desktop {
+        flex-direction: row;
+    }
 }
 
 .awards__img {
@@ -26,13 +50,21 @@
 }
 
 .award__date {
-  margin-inline: auto;
   font-family: inherit;
   font-weight: 400;
   font-size: 16px;
   line-height: calc(32 / 16);
   text-align: center;
   color: var(--color-text-inactive-dark);
+  margin-inline: auto;
+}
+
+.award__company {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(32 / 16);
+  margin-right: 24px;
 }
 
 .award__category {
