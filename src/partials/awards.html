@@ -2,7 +2,7 @@
   <div class="awards__container container">
     <h2 class="awards__title section-title">Our Awards</h2>
     <ul class="awards__list">
-      <li class="awards__item">
+      <li class="awards__item anim-items">
         <div class="award-wrapper">
           <img
             class="awards__img"
@@ -13,10 +13,11 @@
               ./images/awards/branding4@1x.jpg 1x,
               ./images/awards/branding4@2x.jpg 2x
             "
+            alt="3d shapes"
           />
           <p class="award__category">sofa</p>
         </div>
-        <time class="award__date">25 Oct, 2021</time>
+        <time class="award__date" datetime="2021-10-25">25 Oct, 2021</time>
         <div class="company-wrapper" >
           <p class="award__company">Awwwards</p>
           <img
@@ -24,35 +25,11 @@
             src="./images/awards/awards-logo_awwwards.svg"
             width="48"
             onerror="this.src='./images/awards/awards-logo_awwwards.png'"
+            alt="AWWWARDS company logo"
           />
         </div>
       </li>
-      <li class="awards__item">
-        <div class="award-wrapper">
-          <img
-            class="awards__img"
-            src="./images/awards/design2@1x.jpg"
-            width="120"
-            alt=""
-            srcset="
-              ./images/awards/design2@1x.jpg 1x,
-              ./images/awards/design2@2x.jpg 2x
-            "
-          />
-          <p class="award__category">bounce</p>
-        </div>
-        <time class="award__date">19 Oct, 2021</time>
-        <div class="company-wrapper" >
-          <p class="award__company">CSS Design Awards</p>
-          <img
-            class="award_logo"
-            src="./images/awards/awards-logo_cssda.svg"
-            width="48"
-            onerror="this.src='./images/awards/awards-logo_cssda.png'"
-          />
-        </div>
-      </li>
-      <li class="awards__item">
+      <li class="awards__item anim-items">
         <div class="award-wrapper">
           <img
             class="awards__img"
@@ -63,10 +40,38 @@
               ./images/awards/motion1@1x.jpg 1x,
               ./images/awards/motion1@2x.jpg 2x
             "
+            alt="3d shapes"  
+          />
+          <p class="award__category">bounce</p>
+        </div>
+        <time class="award__date" datetime="2021-10-19">19 Oct, 2021</time>
+        <div class="company-wrapper" >
+          <p class="award__company">CSS Design Awards</p>
+          <img
+            class="award_logo"
+            src="./images/awards/awards-logo_cssda.svg"
+            width="48"
+            onerror="this.src='./images/awards/awards-logo_cssda.png'"
+            alt="CSS Designs company logo"
+          />
+        </div>
+      </li>
+      <li class="awards__item anim-items">
+        <div class="award-wrapper">
+          <img
+            class="awards__img"
+            src="./images/awards/design2@1x.jpg"
+            width="120"
+            alt=""
+            srcset="
+              ./images/awards/design2@1x.jpg 1x,
+              ./images/awards/design2@2x.jpg 2x
+            "
+            alt="Picture of water"
           />
           <p class="award__category">water</p>
         </div>
-        <time class="award__date">7 Oct, 2021</time>
+        <time class="award__date" datetime="2021-10-07">7 Oct, 2021</time>
         <div class="company-wrapper" >
           <p class="award__company">The FWA</p>
           <img
@@ -74,10 +79,11 @@
             src="./images/awards/awards-logo_fwa.svg"
             width="48"
             onerror="this.src='./images/awards/awards-logo_fwa.png'"
+            alt="FWA company logo"
           />
         </div>
       </li>
     </ul>
-    <p class="awards__">Want more awards? <a href="#">Explore Now</a></p>
+    <p class="awards__moretxt">Want more awards? <a class="awards__moretxt-link link" href="#">Explore Now</a></p>
   </div>
 </section>
