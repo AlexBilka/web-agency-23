@@ -1,23 +1,86 @@
-<section class="about section example" id="about">
-  <div class="about__container container">
-    <h2 class="about__title section-title">Example</h2>
-    <div class="gallery-card">
-      <h3 class="gallery-card__title">Lorem ipsum</h3>
-      <p class="gallery-card__description">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
-        officiis.
-      </p>
-      <button
-        class="gallery-card__button btn"
-        type="button"
-        data-modal-follow-open
-      >
-        action
-        <svg class="gallery-card__icon" width="12" height="12">
-          <use href="./images/icons.svg#icon-arrow-btn"></use>
-        </svg>
-      </button>
-      <a class="gallery-card__link link" href="#">Twitter</a>
-    </div>
+<section class="awards section" id="awards">
+  <div class="awards__container container">
+    <h2 class="awards__title section-title">Our Awards</h2>
+    <ul class="awards__list">
+      <li class="awards__item anim-items">
+        <div class="award-wrapper">
+          <img
+            class="awards__img"
+            src="./images/awards/branding4@1x.jpg"
+            width="120"
+            srcset="
+              ./images/awards/branding4@1x.jpg 1x,
+              ./images/awards/branding4@2x.jpg 2x
+            "
+            alt="3d shapes pink style"
+          />
+          <p class="award__category">sofa</p>
+        </div>
+        <time class="award__date" datetime="2021-10-25">25 Oct, 2021</time>
+        <div class="company-wrapper" >
+          <p class="award__company">Awwwards</p>
+          <img
+            class="award_logo"
+            src="./images/awards/awards-logo_awwwards.svg"
+            width="48"
+            onerror="this.src='./images/awards/awards-logo_awwwards.png'"
+            alt="AWWWARDS company logo"
+          />
+        </div>
+      </li>
+      <li class="awards__item anim-items">
+        <div class="award-wrapper">
+          <img
+            class="awards__img"
+            src="./images/awards/motion1@1x.jpg"
+            width="120"
+            srcset="
+              ./images/awards/motion1@1x.jpg 1x,
+              ./images/awards/motion1@2x.jpg 2x
+            "
+            alt="3d shapes"  
+          />
+          <p class="award__category">bounce</p>
+        </div>
+        <time class="award__date" datetime="2021-10-19">19 Oct, 2021</time>
+        <div class="company-wrapper" >
+          <p class="award__company">CSS Design Awards</p>
+          <img
+            class="award_logo"
+            src="./images/awards/awards-logo_cssda.svg"
+            width="48"
+            onerror="this.src='./images/awards/awards-logo_cssda.png'"
+            alt="CSS Designs company logo"
+          />
+        </div>
+      </li>
+      <li class="awards__item anim-items">
+        <div class="award-wrapper">
+          <img
+            class="awards__img"
+            src="./images/awards/design2@1x.jpg"
+            width="120"
+            srcset="
+              ./images/awards/design2@1x.jpg 1x,
+              ./images/awards/design2@2x.jpg 2x
+            "
+            alt="Picture of water"
+          />
+          <p class="award__category">water</p>
+        </div>
+        <time class="award__date" datetime="2021-10-07">7 Oct, 2021</time>
+        <div class="company-wrapper" >
+          <p class="award__company">The FWA</p>
+          <img
+            class="award_logo"
+            src="./images/awards/awards-logo_fwa.svg"
+            width="48"
+            onerror="this.src='./images/awards/awards-logo_fwa.png'"
+            alt="FWA company logo"
+          />
+        </div>
+      </li>
+    </ul>
+    <p class="awards__moretxt">Want more awards? <a class="awards__moretxt-link link" href="#">Explore Now</a></p>
   </div>
 </section>
